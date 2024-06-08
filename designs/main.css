@@ -1,0 +1,244 @@
+
+/* v General Setting v */
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: box;
+	font-family: Arial, Helvetica, sans-serif;
+    text-wrap: nowrap;
+}
+
+/* DARK MODE (DEFAULT) */
+:root {
+	--background-color: #225; /* Default Dark mode background color */
+    --text-color: #fff; /* Default Dark mode text color */
+    --background-color-oppose: #9bf;
+    --text-color-oppose: #002;
+	--nav-bg: #004;
+	--nav-text: #4aa;
+
+    /* Fall */
+    --fall1: #5d5c61;
+    --fall2: #379683;
+    --fall3: #7395ae;
+    --fall4: #557a95;
+    --fall5: #b1a269;
+
+    transition: .3s;
+}
+/* LIGHT MODE */
+.light-mode {
+    --background-color: #9bf; /* Light mode background color */
+    --text-color: #002; /* Light mode text color */
+    --background-color-oppose: #225;
+    --text-color-oppose: #fff;
+	--nav-bg: #559;
+	--nav-text: #4aa;
+    
+    transition: .3s;
+}
+
+/* v Media Queries v */
+
+body {
+	margin: 0;
+    padding: 0;
+
+	background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+/* Extra Small Devices (Phones) */
+@media only screen and (max-width: 575px){
+    body {
+      font-size: 14px;
+    }
+}
+  
+  /* Small Devices (Tablets) */
+@media only screen and (min-width: 576px) and (max-width: 767px){
+    body {
+      font-size: 15px;
+    }
+}
+  
+  /* Medium Devices (Desktops, Tablets) */
+@media only screen and (min-width: 768px) and (max-width: 991px){
+    body {
+      /* Font size remains default */
+    }
+}
+  
+  /* Large Devices (Desktops) */
+@media only screen and (min-width: 992px) and (max-width: 1199px){
+    body {
+      /* Font size remains default */
+    }
+}
+  
+  /* Extra Large Devices (Large Desktops, TVs) */
+@media only screen and (min-width: 1200px) {
+    body {
+      /* Font size remains default */
+    }
+}
+
+/* ^ Media Queries ^ */
+
+/* ^ General Setting ^ */
+/*********************************************************************************/
+/* v Navigation Code v */
+
+nav {
+	position: sticky;
+	top: 0;
+	
+	background-color: var(--nav-bg);
+    color: var(--nav-text);
+	height: 15vh;
+    font-family: Arial, sans-serif;
+	
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 5%;
+	
+	z-index: 5;
+}
+#lightModeToggle {
+    margin: auto;
+    height: 60px;
+    width: 60px;
+
+    border: 0;
+    border-radius: 50%;
+    font-weight: 700;
+    background-color: var(--background-color);
+    color: var(--text-color);
+
+    transition: .4s;
+}
+#lightModeToggle:hover {
+    height: 80px;
+    width: 80px;
+    font-size: 1.2rem;
+    background-color: var(--background-color-oppose);
+    color: var(--text-color-oppose);
+    box-shadow: 0px 0px 20px 10px var(--background-color-oppose);
+    rotate: -360deg;
+}
+
+nav h1 {
+	color: aqua;
+
+	transition: all .3s;
+}
+nav h1:hover {
+	font-size:2rem;
+}
+nav ul {
+	list-style: none;
+	display: flex;
+}
+nav ul li {
+	padding: 10px 30px;
+}
+nav ul li a {
+	color: var(--nav-text);
+	text-decoration: none;
+	font-size: 2rem;
+	
+	transition: all 0.3s;
+}
+nav ul li a:hover {	
+	font-size: 2.5rem;	
+	color: #aff;
+}
+
+/* ^ Navigation Code ^ */
+/*********************************************************************************/
+/* v Sidebar Code v */
+
+#openAside {
+    margin: 1%;
+	position: fixed;
+    padding: 0;
+    left: 0;
+    width: 70px;
+    
+    background-color: var(--nav-bg);
+    color: var(--nav-text);
+	font-size: 3em;
+    border: 0;
+    border-radius: 25%;
+
+	z-index: 1;
+}
+aside {
+    position: fixed;
+	left: 0;
+    bottom: 0;
+	
+	height: 81vh;
+	width: 25vw;
+    display: none;
+
+	margin: 2vh;
+
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    background-color: var(--nav-bg);
+    color: var(--nav-text);
+    border-radius: 5%;
+	
+    text-align: center;
+
+	z-index: 5;
+
+    transition: .3s;
+}
+aside h3{
+    margin: 3% 0;
+
+    color: #f70;
+    font-family: 'Lucida Sans';
+    font-size: 2rem;
+}
+aside ul {
+    padding: 3vh 0;
+
+    display: flex;
+    flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+    background-color: aqua;
+}
+aside ul li {
+    padding: 5% 0;
+    background-color: var(--background-color);
+
+    width: 27vw;
+    
+    list-style-type: none;
+
+    transition: .3s;
+}
+aside ul li:hover {
+    background-color: var(--background-color-oppose);
+}
+aside ul li:hover a {
+    color: var(--text-color-oppose);
+}
+aside ul li a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 1.5rem;
+
+    transition: .3s;
+}
+
+/* ^ Sidebar Code ^ */
+/*********************************************************************************/

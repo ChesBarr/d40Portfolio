@@ -1,0 +1,34 @@
+
+/* personalProfessionalWebsite/index.html */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+	margin: 7% 15% 0;
+}
+header p {
+	font-size: 1.5rem;
+    color: var(--text-color);
+	text-align: center;
+}
+
+#myProfile {
+	height: 300px;
+	width: 300px;
+
+	background-color: blue;
+	border: 3px solid aqua;
+	border-radius: 50%;
+
+	transition: .1s;
+}
+#myProfile:hover {
+	height: 350px;
+	width: 350px;
+}
+#myProfile:active, #myProfile:focus {
+	border-radius: 0;
+	border: 0;
+}
