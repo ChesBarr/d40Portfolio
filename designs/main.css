@@ -6,7 +6,7 @@
 	margin: 0;
 	box-sizing: box;
 	font-family: Arial, Helvetica, sans-serif;
-    text-wrap: nowrap;
+    text-wrap: wrap;
 }
 
 /* DARK MODE (DEFAULT) */
@@ -17,13 +17,6 @@
     --text-color-oppose: #002;
 	--nav-bg: #004;
 	--nav-text: #4aa;
-
-    /* Fall */
-    --fall1: #5d5c61;
-    --fall2: #379683;
-    --fall3: #7395ae;
-    --fall4: #557a95;
-    --fall5: #b1a269;
 
     transition: .3s;
 }
@@ -128,14 +121,15 @@ nav {
     box-shadow: 0px 0px 20px 10px var(--background-color-oppose);
     rotate: -360deg;
 }
-
 nav h1 {
 	color: aqua;
-
-	transition: all .3s;
 }
-nav h1:hover {
-	font-size:2rem;
+nav h1 span {
+    color: transparent;
+    transition: .5s;
+}
+nav h1 span:hover {
+	color: aqua;
 }
 nav ul {
 	list-style: none;
@@ -207,14 +201,10 @@ aside h3{
     font-size: 2rem;
 }
 aside ul {
-    padding: 3vh 0;
-
     display: flex;
     flex-direction: column;
 	align-items: center;
 	justify-content: center;
-
-    background-color: aqua;
 }
 aside ul li {
     padding: 5% 0;
@@ -242,3 +232,65 @@ aside ul li a {
 
 /* ^ Sidebar Code ^ */
 /*********************************************************************************/
+/* v Footer Code v */
+
+footer {
+    position: static;
+    bottom: 0;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    margin-top: 20vh;
+    height: 300px;
+    width: 100vw;
+    background-color: #444;
+}
+.footerSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 50px;
+    width: 33%;
+
+    font-family: Arial;
+    color: white;
+}
+.footerSection label a, .footerSection ul li a i {
+    font-size: 2rem;
+    color: white;
+}
+.footerSection label a {
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+.footerSection ul {
+    list-style-type: none;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.footerSection ul li {
+    margin: 0 10px;
+}
+.footerSection h4 {
+    margin-bottom: 40px;
+}
+.footerSection button {
+    background-color: transparent;
+    border: 0;
+}
+.footerSection button img {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+/* ^ Footer Code ^ */
+/*********************************************************************************/
+
+

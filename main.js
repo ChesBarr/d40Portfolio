@@ -8,8 +8,8 @@ document.getElementById('lightModeToggle').addEventListener("click", ()=>{
 });
 
 // Sidebar Code
-openAside = document.getElementById("openAside");
-openAside.addEventListener("click", ()=>{
+
+function asideClose(){
     openAside.style.left = openAside.style.left === "" ? "27vw" : "";
     let sidebar = document.getElementById("sidebar");
     let open = "&gt;";
@@ -17,7 +17,7 @@ openAside.addEventListener("click", ()=>{
     let openBgColor = "--nav-bg";
     let openColor = "--nav-text";
     closeButton(sidebar, openAside, open, close, openColor, closeColor, openBgColor, closeBgColor);
-});
+}
 
 /*************************************************************************************************************************************************/
 /* v UTILITIES v */
