@@ -5,21 +5,15 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-	margin: 7% 15% 0;
 }
 header p {
-	font-size: 1.5rem;
     color: var(--text-color);
 	text-align: center;
 }
 
 #myProfile {
-	height: 300px;
-	width: 300px;
-
 	background-color: transparent;
-	border: 1px solid aqua;
+	border-bottom: 5px solid var(--neutral);
 	border-radius: 15%;
 
 	transition: .1s;
@@ -27,10 +21,8 @@ header p {
 #myProfile:hover {
 	border: 0;
 	border-radius: 0;
-	height: 350px;
-	width: 350px;
 }
-#myProfile:active, #myProfile:focus {
+#myProfile:hover {
 	border-radius: 0;
 	border: 0;
 }
@@ -43,7 +35,6 @@ header p {
 	align-items: center;
 	flex-direction: column;
 
-	margin: 100px 0;
 	border: 2px solid var(--text-color);
 }
 

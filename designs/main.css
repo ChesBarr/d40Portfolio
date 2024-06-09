@@ -11,113 +11,26 @@
 
 /* DARK MODE (DEFAULT) */
 :root {
-	--background-color: #225; /* Default Dark mode background color */
+	--background-color: #000; /* Default Dark mode background color */
     --text-color: #fff; /* Default Dark mode text color */
-    --background-color-oppose: #9bf;
+    --background-color-oppose: #fff;
     --text-color-oppose: #002;
-	--nav-bg: #004;
-	--nav-text: #4aa;
+	--nav-bg: #111;
+    --neutral: #66f;
 
     transition: .3s;
 }
 /* LIGHT MODE */
 .light-mode {
-    --background-color: #9bf; /* Light mode background color */
+    --background-color: #fff; /* Light mode background color */
     --text-color: #002; /* Light mode text color */
-    --background-color-oppose: #225;
+    --background-color-oppose: #000;
     --text-color-oppose: #fff;
-	--nav-bg: #559;
-	--nav-text: #4aa;
+	--nav-bg: #ccc;
+    --neutral: #66f;
     
     transition: .3s;
 }
-
-/* v Media Queries v */
-
-body {
-	margin: 0;
-    padding: 0;
-
-	background-color: var(--background-color);
-    color: var(--text-color);
-}
-#myProfile {
-	height: 300px;
-	width: 300px;
-}
-
-/* Extra Small Devices (Phones) */
-@media only screen and (max-width: 575px){
-    body {
-      font-size: 14px;
-    }
-
-    #myProfile {
-        height: 100px;
-        width: 100px;
-    }
-
-    .footerSection button img {
-        height: 20px;
-        width: 20px;
-    }
-}
-  
-  /* Small Devices (Tablets) */
-@media only screen and (min-width: 576px) and (max-width: 767px){
-    body {
-      font-size: 15px;
-    }
-    #myProfile {
-        height: 125px;
-        width: 125px;
-    }
-    .footerSection button img {
-        height: 40px;
-        width: 40px;
-    }
-}
-  
-  /* Medium Devices (Desktops, Tablets) */
-@media only screen and (min-width: 768px) and (max-width: 991px){
-    body {
-      /* Font size remains default */
-    }
-    #myProfile {
-
-    }
-    .footerSection button img {
-
-    }
-}
-  
-  /* Large Devices (Desktops) */
-@media only screen and (min-width: 992px) and (max-width: 1199px){
-    body {
-      /* Font size remains default */
-    }
-    #myProfile {
-        
-    }
-    .footerSection button img {
-        
-    }
-}
-  
-  /* Extra Large Devices (Large Desktops, TVs) */
-@media only screen and (min-width: 1200px) {
-    body {
-      /* Font size remains default */
-    }
-    #myProfile {
-        
-    }
-    .footerSection button img {
-        
-    }
-}
-
-/* ^ Media Queries ^ */
 
 /* ^ General Setting ^ */
 /*********************************************************************************/
@@ -126,10 +39,9 @@ body {
 nav {
 	position: sticky;
 	top: 0;
-    width: 100%;
 	
 	background-color: var(--nav-bg);
-    color: var(--nav-text);
+    color: var(--neutral);
 	height: 15vh;
     font-family: Arial, sans-serif;
 	
@@ -137,13 +49,12 @@ nav {
 	align-items: center;
 	justify-content: space-between;
 	padding: 0 5%;
+    box-shadow: 0px 3vh 20px 0px rgba(0, 0, 0, 0.3);
 	
 	z-index: 5;
 }
 #lightModeToggle {
     margin: auto;
-    height: 60px;
-    width: 60px;
 
     border: 0;
     border-radius: 50%;
@@ -154,23 +65,21 @@ nav {
     transition: .4s;
 }
 #lightModeToggle:hover {
-    height: 80px;
-    width: 80px;
     font-size: 1.2rem;
     background-color: var(--background-color-oppose);
     color: var(--text-color-oppose);
     box-shadow: 0px 0px 20px 10px var(--background-color-oppose);
     rotate: -360deg;
 }
-nav h1 {
-	color: aqua;
+nav h2 {
+	color: var(--neutral);
 }
-nav h1 span {
+nav h2 span {
     color: transparent;
     transition: .5s;
 }
-nav h1 span:hover {
-	color: aqua;
+nav h2 span:hover {
+	color: var(--neutral);
 }
 nav ul {
 	list-style: none;
@@ -178,17 +87,6 @@ nav ul {
 }
 nav ul li {
 	padding: 10px 30px;
-}
-nav ul li a {
-	color: var(--nav-text);
-	text-decoration: none;
-	font-size: 2rem;
-	
-	transition: all 0.3s;
-}
-nav ul li a:hover {	
-	font-size: 2.5rem;	
-	color: #aff;
 }
 
 /* ^ Navigation Code ^ */
@@ -200,23 +98,21 @@ nav ul li a:hover {
 	position: fixed;
     padding: 0;
     left: 0;
-    width: 70px;
     
     background-color: var(--nav-bg);
-    color: var(--nav-text);
+    color: var(--neutral);
 	font-size: 3em;
     border: 0;
     border-radius: 25%;
+    box-shadow: 0px 3vh 20px 0px rgba(0, 0, 0, 0.3);
 
-	z-index: 1;
+	z-index: 6;
 }
 aside {
     position: fixed;
 	left: 0;
     bottom: 0;
 	
-	height: 81vh;
-	width: 25vw;
     display: none;
 
 	margin: 2vh;
@@ -224,9 +120,9 @@ aside {
     overflow-x: hidden;
     overflow-y: auto;
 
-    background-color: var(--nav-bg);
-    color: var(--nav-text);
+    color: var(--neutral);
     border-radius: 5%;
+    box-shadow: 0px 3vh 20px 0px rgba(0, 0, 0, 0.3);
 	
     text-align: center;
 
@@ -234,24 +130,17 @@ aside {
 
     transition: .3s;
 }
-aside h3{
-    margin: 3% 0;
-
-    color: #f70;
-    font-family: 'Lucida Sans';
-    font-size: 2rem;
-}
 aside ul {
     display: flex;
     flex-direction: column;
 	align-items: center;
 	justify-content: center;
+    border: 2px solid var(--neutral);
 }
 aside ul li {
     padding: 5% 0;
     background-color: var(--background-color);
-
-    width: 27vw;
+    width: 100%;
     
     list-style-type: none;
 
@@ -280,12 +169,9 @@ footer {
     bottom: 0;
 
     display: flex;
-    flex-direction: row;
     justify-content: center;
 
     margin-top: 20vh;
-    height: 300px;
-    width: 100%;
     background-color: #444;
 }
 .footerSection {
@@ -295,17 +181,14 @@ footer {
     align-items: center;
 
     padding: 50px;
-    width: 33%;
 
     font-family: Arial;
     color: white;
 }
 .footerSection label a, .footerSection ul li a i {
-    font-size: 2rem;
     color: white;
 }
 .footerSection label a {
-    font-size: 1.5rem;
     text-decoration: none;
 }
 .footerSection ul {

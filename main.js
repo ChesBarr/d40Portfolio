@@ -10,7 +10,6 @@ document.getElementById('lightModeToggle').addEventListener("click", ()=>{
 // Sidebar Code
 
 function asideClose(){
-    openAside.style.left = openAside.style.left === "" ? "27vw" : "";
     let sidebar = document.getElementById("sidebar");
     let open = "&gt;";
     let close = "&times;";

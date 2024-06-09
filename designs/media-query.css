@@ -1,0 +1,119 @@
+
+/* v Media Queries v */
+
+/* Default */
+body {
+	margin: 0;
+    padding: 0;
+
+	background-color: var(--background-color);
+    color: var(--text-color);
+}
+body {
+    font-size: 14px;
+}
+#lightModeToggle {
+    height: 60px;
+    width: 60px;
+}
+#lightModeToggle:hover {
+    height: 80px;
+    width: 80px;
+}
+
+header {
+    margin: 8% 20% ;
+}
+#myProfile {
+    height: 300px;
+    width: 300px;
+}
+
+#openAside {
+    width: 70px;
+}
+aside {
+	width: 200px;
+}
+aside ul li {
+    padding: 5% 0;
+}
+
+footer {
+    flex-direction: row;
+}
+.footerSection label a, .footerSection ul li a i {
+    font-size: 2rem;
+}
+.footerSection label a {
+    font-size: 1.5rem;
+}
+.footerSection button img {
+    height: 150px;
+    width: 150px;
+}
+
+/* styles1.css */
+.sectionContents {
+    margin: 400px 0;
+}
+
+
+/* Extra Small Devices (Phones) */
+@media only screen and (max-width: 575px){
+    body {
+      font-size: 14px;
+    }
+    nav h2 {
+        font-size: .8rem;
+    }
+    #lightModeToggle {
+        height: 60px;
+        width: 60px;
+    }
+    #lightModeToggle:hover {
+        height: 80px;
+        width: 80px;
+    }
+
+    header {
+        margin: 20% 10% 20%;
+    }
+    #myProfile {
+        height: 150px;
+        width: 150px;
+    }
+    
+    #openAside {
+        width: 40px;
+    }
+    aside ul li {
+        padding: 0;
+    }
+
+    footer {
+        flex-direction: column-reverse;
+    }
+    .footerSection label a, .footerSection ul li a i {
+        font-size: 2rem;
+    }
+    .footerSection label a {
+        font-size: 1.2rem;
+    }
+    .footerSection button img {
+        height: 100px;
+        width: 100px;
+    }
+
+    /* styles1.css */
+    .sectionContents {
+        margin: 300px 0;
+    }
+}
+  
+  /* Small Devices (Tablets) */
+@media only screen and (min-width: 576px) and (max-width: 767px){
+    body {
+      font-size: 15px;
+    }
+}
