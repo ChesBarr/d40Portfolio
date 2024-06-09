@@ -3,9 +3,21 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Home</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-Q7h/MEP+ZONBrwQpNjHR2x+9Y23VIbM/PhorM2X7iX/ydq0GjlM9nhtBpUv4LgD+gZeWwg50Bv31S9LQbXtbhA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+		<title>Dapatnapo Portfolio Website</title>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+			integrity="sha512-Q7h/MEP+ZONBrwQpNjHR2x+9Y23VIbM/PhorM2X7iX/ydq0GjlM9nhtBpUv4LgD+gZeWwg50Bv31S9LQbXtbhA=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+			integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
 		<link rel="icon" href="images/ .png" type="image/x-icon" />
 		<link rel="stylesheet" href="designs/media-query.css" type="text/css" />
 		<link rel="stylesheet" href="designs/main.css" type="text/css" />
@@ -15,18 +27,18 @@
 		<nav>
 			<h2>Dapatnapo, Chester Barry A<span>slarona</span></h2>
 			<ul>
-				<button id="lightModeToggle">Light</button>
+				<button id="lightModeToggle">theme</button>
 			</ul>
 		</nav>
 		<button id="openAside" onclick="asideClose();">&gt;</button>
 		<aside id="sidebar">
 			<ul>
-				<li><a href="#family" onclick="asideClose();">Family</a></li>
-				<li><a href="#personal" onclick="asideClose();">Personal Info</a></li>
-				<li><a href="#achievements" onclick="asideClose();">Achievements</a></li>
-				<li><a href="#experiences" onclick="asideClose();">Experiences</a></li>
-				<li><a href="#gallery" onclick="asideClose();">Gallery</a></li>
-				<li><a href="#socials" onclick="asideClose();">Socials</a></li>
+				<li onclick="asideClose(); goto('');">Personal Info</li>
+				<li onclick="asideClose(); goto('');">Family</li>
+				<li onclick="asideClose(); goto('');">Achievements</li>
+				<li onclick="asideClose(); goto('');">Experiences</li>
+				<li onclick="asideClose(); goto('');">Gallery</li>
+				<li onclick="asideClose(); goto('');">Socials</li>
 			</ul>
 		</aside>
 
@@ -36,78 +48,126 @@
 				I am Dapatnapo, Chester
 			</p>
 
-			<img id="myProfile" src="images/formal1x1.jpg"/>
+			<img id="myProfile" src="images/mypics/formal1x1.jpg" />
 		</header>
 
-		<section class="sectionContents" id="family">
-			<h2>Section 1</h2>
-			<p>This is family</p>
+		<section class="sectionContents" id="personal" onclick="goto('');">
+			<div class="innerContent">
+				<h2>Personal</h2>
+				<img class="mainImg" src="images/mypics/me17.jpg" alt="me17.jpg" />
+			</div>
+			<div class="subImgContainer">
+				<img class="subImg" src="images/mypics/me16.jpg" alt="me16.jpg" />
+				<img class="subImg" src="images/mypics/me12.jpg" alt="me12.jpg" />
+				<img class="subImg" src="images/mypics/me2.jpg" alt="me2.jpg" />
+				<img class="subImg" src="images/mypics/me6.jpg" alt="me6.jpg" />
+			</div>
 		</section>
 
-		<section class="sectionContents" id="personal">
-			<h2>Section 2</h2>
-			<p>This is personal</p>
+		<section class="sectionContents" id="family" onclick="goto('');">
+			<div class="innerContent">
+				<h2>Family</h2>
+				<img class="mainImg" src="images/" alt="" />
+			</div>
+			<div class="subImgContainer">
+				<img class="subImg" src="images/" alt="" />
+				<img class="subImg" src="images/" alt="" />
+				<img class="subImg" src="images/" alt="" />
+			</div>
 		</section>
 
-		<section class="sectionContents" id="achievements">
-			<h2>Section 3</h2>
-			<p>This is achievements</p>
+		<section class="sectionContents" id="achievements" onclick="goto('');">
+			<div class="innerContent">
+				<h2>Achievements</h2>
+				<img class="mainImg" src="images/" alt="" />
+			</div>
+			<div class="subImgContainer">
+				<img class="subImg" src="images/" alt="" />
+				<img class="subImg" src="images/" alt="" />
+				<img class="subImg" src="images/" alt="" />
+			</div>
 		</section>
 
-		<section class="sectionContents" id="experiences">
-			<h2>Section 4</h2>
-			<p>This is experiences</p>
+		<section class="sectionContents" id="experiences" onclick="goto('');">
+			<div class="innerContent">
+				<h2>Experiences</h2>
+				<img class="mainImg" src="images/" alt="" />
+			</div>
+			<div class="subImgContainer">
+				<img class="subImg" src="images/projects/java-diamond.png" alt="java-diamond.png" />
+				<img class="subImg" src="images/" alt="" />
+				<img class="subImg" src="images/" alt="" />
+			</div>
 		</section>
 
-		<section class="sectionContents" id="gallery">
-			<h2>Section 5</h2>
-			<p>This is gallery</p>
+		<section class="sectionContents" id="gallery" onclick="goto('');">
+			<div class="innerContent">
+				<h2>Gallery</h2>
+				<img class="mainImg" src="images/games/mc-acelava.gif" alt="mc-acelava.gif" />
+			</div>
+			<div class="subImgContainer">
+				<img class="subImg" src="images/games/mc-survivalHome.jpg" alt="mc-survivalHome.jpg" />
+				<img class="subImg" src="images/games/chess-tricked.gif" alt="chess-tricked.gif" />
+				<img class="subImg" src="images/games/chessezmate.gif" alt="chessezmate.gif" />
+			</div>
 		</section>
 
-		<section class="sectionContents" id="socials">
-			<h2>Section 6</h2>
-			<p>This is socials</p>
+		<section class="sectionContents" id="socials" onclick="goto('');">
+			<div class="innerContent">
+				<h2>Socials</h2>
+				<img class="mainImg" src="images/" alt="" />
+			</div>
+			<div class="subImgContainer">
+				<img class="subImg" src="images/" alt="" />
+				<img class="subImg" src="images/" alt="" />
+				<img class="subImg" src="images/" alt="" />
+			</div>
 		</section>
 
 		<footer id="socials">
 			<section class="footerSection">
-				<label>Email: <a href="mailto:dapatnapochesterbarry@gmail.com">dapatnapochesterbarry@gmail.com</a></label>
-                <label>Phone: <a href="tel:09685418437">09685418437</a></label>
-                <ul>
-                    <li>
-                        <a
-                            href="https://www.facebook.com/chesteraslarona.dapatnapo?mibextid=kFxxJD"
-                            ><i class="fa-brands fa-facebook"></i
-                        ></a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/chesterdapatnapo/"
-                            ><i class="fa-brands fa-instagram"></i
-                        ></a>
-                    </li>
-                    <li>
-                        <a
-                            href="https://youtube.com/@chesterbarrydapatnapo?si=5Z5NHR7WwL7lZp1I"
-                            ><i class="fa-brands fa-youtube"></i
-                        ></a>
-                    </li>
-                    <li>
-                        <a href="https://discord.com/users/atesh2103"
-                            ><i class="fa-brands fa-discord"></i
-                        ></a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/ChesBarr"
-                            ><i class="fa-brands fa-github"></i
-                        ></a>
-                    </li>
-                    <li>
-                        <a
-                            href="https://www.tiktok.com/@atezeee?is_from_webapp=1&sender_device=pc"
-                            ><i class="fa-brands fa-tiktok"></i
-                        ></a>
-                    </li>
-                </ul>
+				<label
+					>Email:
+					<a href="mailto:dapatnapochesterbarry@gmail.com"
+						>dapatnapochesterbarry@gmail.com</a
+					></label
+				>
+				<label>Phone: <a href="tel:09685418437">09685418437</a></label>
+				<ul>
+					<li>
+						<a
+							href="https://www.facebook.com/chesteraslarona.dapatnapo?mibextid=kFxxJD"
+							><i class="fa-brands fa-facebook"></i
+						></a>
+					</li>
+					<li>
+						<a href="https://www.instagram.com/chesterdapatnapo/"
+							><i class="fa-brands fa-instagram"></i
+						></a>
+					</li>
+					<li>
+						<a
+							href="https://youtube.com/@chesterbarrydapatnapo?si=5Z5NHR7WwL7lZp1I"
+							><i class="fa-brands fa-youtube"></i
+						></a>
+					</li>
+					<li>
+						<a href="https://discord.com/users/atesh2103"
+							><i class="fa-brands fa-discord"></i
+						></a>
+					</li>
+					<li>
+						<a href="https://github.com/ChesBarr"
+							><i class="fa-brands fa-github"></i
+						></a>
+					</li>
+					<li>
+						<a
+							href="https://www.tiktok.com/@atezeee?is_from_webapp=1&sender_device=pc"
+							><i class="fa-brands fa-tiktok"></i
+						></a>
+					</li>
+				</ul>
 			</section>
 			<section class="footerSection" id="copyright">
 				<h4>All Rights Reserved &copy;</h4>
@@ -118,13 +178,13 @@
 				</p>
 			</section>
 			<section class="footerSection">
-					<button type="submit" name="linked" value="home">
-						<img
-							src="images/myIdPicture.png"
-							alt="myIdPicture.png"
-							title="Bumalik sa Menu"
-						/>
-					</button>
+				<button type="submit" name="linked" value="home">
+					<img
+						src="images/mypics/myIdPicture.png"
+						alt="myIdPicture.png"
+						title="Bumalik sa Menu"
+					/>
+				</button>
 			</section>
 		</footer>
 		<script src="main.js"></script>

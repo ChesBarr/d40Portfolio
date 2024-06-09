@@ -22,7 +22,11 @@ body {
 }
 
 header {
-    margin: 8% 20% ;
+    margin: 8% 20%;
+    justify-content: center;
+}
+header p {
+    padding: 20px;
 }
 #myProfile {
     height: 300px;
@@ -34,9 +38,6 @@ header {
 }
 aside {
 	width: 200px;
-}
-aside ul li {
-    padding: 5% 0;
 }
 
 footer {
@@ -55,7 +56,23 @@ footer {
 
 /* styles1.css */
 .sectionContents {
+    padding: 100px 0;
     margin: 400px 0;
+}
+.innerContent {
+    width: 100%;
+}
+.mainImg {
+    height: 300px;
+    width: 350px;
+}
+.subImgContainer {
+    width: 100%;
+}
+.subImg {
+    height: 200px;
+    width: 200px;
+    margin: 5px;
 }
 
 
@@ -64,20 +81,27 @@ footer {
     body {
       font-size: 14px;
     }
+    nav {
+        height: 60px;
+    }
     nav h2 {
         font-size: .8rem;
     }
     #lightModeToggle {
+        height: 40px;
+        width: 40px;
+    }
+    #lightModeToggle:hover {
         height: 60px;
         width: 60px;
     }
-    #lightModeToggle:hover {
-        height: 80px;
-        width: 80px;
-    }
 
     header {
-        margin: 20% 10% 20%;
+        margin: 30% 10%;
+    }
+    header p {
+        padding: 15px;
+        font-size: .5rem;
     }
     #myProfile {
         height: 150px;
@@ -86,9 +110,6 @@ footer {
     
     #openAside {
         width: 40px;
-    }
-    aside ul li {
-        padding: 0;
     }
 
     footer {
@@ -107,7 +128,21 @@ footer {
 
     /* styles1.css */
     .sectionContents {
-        margin: 300px 0;
+        margin: 500px 0;
+    }
+    .innerContent {
+    
+    }
+    .mainImg {
+        height: 200px;
+        width: 200px;
+    }
+    .subImgContainer {
+        
+    }
+    .subImg {
+        height: 100px;
+        width: 100px;
     }
 }
   

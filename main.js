@@ -40,3 +40,8 @@ function closeButton(displayElement, button, open, close, openColor, closeColor,
     let currentInnerHTML = button.innerHTML;
     button.innerHTML = currentInnerHTML === open ? close : open;
 }
+
+function goto(passedLink){
+    let link = passedLink;
+    window.location.href = link;
+}
