@@ -16,13 +16,9 @@ body {
     height: 60px;
     width: 60px;
 }
-#lightModeToggle:hover {
-    height: 80px;
-    width: 80px;
-}
 
 header {
-    margin: 8% 20%;
+    margin: 6% 20% 4%;
     justify-content: center;
 }
 header p {
@@ -55,6 +51,15 @@ footer {
 }
 
 /* styles1.css */
+.specialties {
+    margin: 0 5%;
+}
+.specialties img {
+    margin: 3%;
+	height: 80px;
+    width: 80px;
+}
+
 .sectionContents {
     padding: 100px 0;
     margin: 400px 0;
@@ -91,13 +96,9 @@ footer {
         height: 40px;
         width: 40px;
     }
-    #lightModeToggle:hover {
-        height: 60px;
-        width: 60px;
-    }
-
+    
     header {
-        margin: 30% 10%;
+        margin: 30% 10% 10%;
     }
     header p {
         padding: 15px;
@@ -127,18 +128,17 @@ footer {
     }
 
     /* styles1.css */
+    .specialties img {
+        height: 50px;
+        width: 50px;
+    }
+
     .sectionContents {
         margin: 500px 0;
-    }
-    .innerContent {
-    
     }
     .mainImg {
         height: 200px;
         width: 200px;
-    }
-    .subImgContainer {
-        
     }
     .subImg {
         height: 100px;
