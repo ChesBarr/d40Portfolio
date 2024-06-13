@@ -15,17 +15,20 @@
     --text-color: #fff; /* Default Dark mode text color */
     --background-color-oppose: #fff;
     --text-color-oppose: #002;
-	--nav-bg: #111;
+	--nav-bg: #122;
 
     --neutral: #66f;
-    --borders: #777;
+    --borders: aqua;
+
+    --footer: #123;
 
     transition: .3s;
 }
-/* LIGHT MODE */
+
+/* LIGHT MODE 
 .light-mode {
-    --background-color: #fff; /* Light mode background color */
-    --text-color: #002; /* Light mode text color */
+    --background-color: #fff;
+    --text-color: #002;
     --background-color-oppose: #000;
     --text-color-oppose: #fff;
 	--nav-bg: #ccc;
@@ -35,6 +38,28 @@
 
     transition: .3s;
 }
+*/
+
+/* v Utilities v */
+
+.borderNorm {
+    border: 1px solid var(--borders);
+    border-left: 0;
+    border-right: 0;
+}
+
+.borderNorm:hover {
+    border: 1px solid #c60;
+}
+.reverseH {
+    flex-direction: row-reverse;
+}
+.reverseV {
+    flex-direction: column-reverse;
+
+}
+/* ^ Utilities ^ */
+
 
 /* ^ General Setting ^ */
 /*********************************************************************************/
@@ -51,28 +76,11 @@ nav {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+
 	padding: 0 5%;
     box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.3);
 	
 	z-index: 5;
-}
-#lightModeToggle {
-    margin: auto;
-
-    border: 0;
-    border-radius: 50%;
-    font-weight: 700;
-    background-color: var(--background-color);
-    color: var(--text-color);
-
-    transition: .4s;
-}
-#lightModeToggle:hover {
-    font-size: 1.2rem;
-    background-color: var(--background-color-oppose);
-    color: var(--text-color-oppose);
-    box-shadow: 0px 0px 10px 5px var(--background-color-oppose);
-    rotate: -360deg;
 }
 nav h2 {
 	color: var(--neutral);
@@ -88,76 +96,12 @@ nav ul {
 	list-style: none;
 	display: flex;
 }
-nav ul li {
-	padding: 10px 30px;
+nav ul li a {
+    text-decoration: none;
+    color: var(--text-color);
 }
 
 /* ^ Navigation Code ^ */
-/*********************************************************************************/
-/* v Sidebar Code v */
-
-#openAside {
-    margin: 1.5%;
-	position: fixed;
-    padding: 0;
-    left: 0;
-    
-    background-color: var(--nav-bg);
-    color: var(--neutral);
-	font-size: 3em;
-    border: 0;
-    border-radius: 25%;
-    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.3);
-
-	z-index: 6;
-}
-aside {
-    position: fixed;
-	left: 0;
-    bottom: 0;
-	
-    display: none;
-
-	margin: 3%;
-
-    overflow-x: hidden;
-    overflow-y: auto;
-
-    color: var(--neutral);
-    border-radius: 5%;
-    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.3);
-	
-    text-align: center;
-
-	z-index: 5;
-
-    transition: .3s;
-}
-aside ul {
-    display: flex;
-    flex-direction: column;
-	align-items: center;
-	justify-content: center;
-    border: 2px solid var(--neutral);
-}
-aside ul li {
-    padding: 5% 0;
-    background-color: var(--background-color);
-    width: 100%;
-    
-    color: var(--text-color);
-    font-size: 1.5rem;
-
-    list-style-type: none;
-
-    transition: .3s;
-}
-aside ul li:hover {
-    background-color: var(--background-color-oppose);
-    color: var(--text-color-oppose);
-}
-
-/* ^ Sidebar Code ^ */
 /*********************************************************************************/
 /* v Footer Code v */
 
@@ -168,7 +112,7 @@ footer {
     display: flex;
     justify-content: center;
 
-    background-color: #444;
+    background-color: var(--footer);
 }
 .footerSection {
     display: flex;
@@ -205,6 +149,7 @@ footer {
     border: 0;
 }
 .footerSection button img {
+    border: 1px solid var(--borders);
     border-radius: 50%;
 }
 

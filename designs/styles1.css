@@ -33,33 +33,93 @@ header p {
 	position: relative;
 }
 
-.sectionContents {
-	display: flex;
-	align-items: center;
-	flex-direction: column;
+.sectionTitle {
+	background-color: var(--nav-bg);
+	text-align: center;
+}
+.mainSection {
 
-	border: 2px solid var(--borders);
-	border-left: 0;
-	border-right: 0;
 }
 .sectionContents {
-	
-}
-.innerContent {
 	display: flex;
-	align-items: center;
-	justify-content: space-evenly;
 }
-.mainImg {
+.sectionContents img {
+	border: 1px solid var(--borders);
+}
+.sectionContents:hover img, .sectionContents:hover {
 	
 }
-.subImgContainer {
+.sectionContents .title_description {
+	text-align: center;
+	flex-grow: 1;
+}
+
+form {
 	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-.subImg {
-	
 }
 
 /* ^ Content Sections ^ */
+/* v Profile Design v */
+
+.fog {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0,0,0,.5);
+    z-index: 10;
+}
+.modalform {
+    padding: 5%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 1000px;
+    transform: translate(-50%, -50%);
+
+    /* display: none; */
+    
+    border: 1px solid var(--borders);
+    background-color: var(--nav-bg);
+    box-shadow: 10px 3vh 20px 0px rgba(0, 0, 0, 0.3);
+    z-index: 11;
+}
+.formpage {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 3%;
+    margin-top: 0;
+}
+.formpage img, .userProfileBar img {
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+}
+.innerdiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 3%;
+}
+.innerdiv button {
+    margin: 2% 0;
+}
+.titleandinput {
+    display: flex;
+    width: 100%;
+    margin: 2% 5%;
+}
+.invert {
+    display: flex;
+    flex-direction: column;
+}
+.gender label {
+    margin: 0 3%;
+}
+
+/* ^ Profile Design ^ */

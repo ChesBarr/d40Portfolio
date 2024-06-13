@@ -24,28 +24,23 @@
 		<link rel="stylesheet" href="designs/styles1.css" type="text/css" />
 	</head>
 	<body>
-		<nav>
+		<nav class='borderNorm'>
 			<h2>Dapatnapo, Chester Barry A<span>slarona</span></h2>
+
 			<ul>
-				<button id="lightModeToggle">theme</button>
+				<!-- <button id="lightModeToggle">theme</button> -->
+				<li><a href='#projects'>Projects</a></li>
+				<li><a href='#achievements'>Achievements</a></li>
+				<li><a onclick="openModal('personalModal','personalModalFog');">Personal</a></li>
 			</ul>
 		</nav>
-		<button id="openAside" onclick="asideClose();">&gt;</button>
-		<aside id="sidebar">
-			<ul>
-				<li onclick="asideClose(); goto('');">Personal Info</li>
-				<li onclick="asideClose(); goto('');">Achievements</li>
-				<li onclick="asideClose(); goto('');">Projects</li>
-				<li onclick="asideClose(); goto('');">Gallery</li>
-			</ul>
-		</aside>
 
 		<header>
 			<p>
 				Welcome to my Portfolio Website!<br /><br />
-				I am Dapatnapo, ChesterG
+				I am Dapatnapo, Chester
 			</p>
-			<img id="myProfile" src="images/mypics/formal1x1.jpg" alt="me" />
+			<img class='borderNorm' id="myProfile" src="images/mypics/formal1x1.jpg" alt="me" />
 		</header>
 
 		<section class="specialties">
@@ -55,59 +50,144 @@
 			<img src="images/projects/logos/logo-php.png" alt="logo-php.png" />
 			<img src="images/projects/logos/logo-sql.svg" alt="logo-sql.svg" />
 			<img src="images/projects/logos/logo-c.png" alt="logo-c.png" />
-			<img src="images/projects/logos/logo-cpp.png" alt="logo-cpp.png" />X
+			<img src="images/projects/logos/logo-cpp.png" alt="logo-cpp.png" />
+		</section>	
+
+		<h1 class='sectionTitle' id='projects'>Projects</h1>
+		<section class='mainSection'>
+			<section class='sectionContents borderNorm' >
+				<img src='images/projects/java-diamond.png' alt='' />
+				
+				<div class='title_description'>
+					<h3>Title</h3>
+					<p>
+						The quick brown fox jumps over the lazy dog
+					</p>
+				</div>
+			</section>
+
+			<section class='sectionContents borderNorm reverseH'>
+				<img src='images/projects/java-diamond.png' alt='' />
+				
+				<div class='title_description'>
+					<h3>Title</h3>
+					<p>
+						The quick brown fox jumps over the lazy dog
+					</p>
+				</div>
+			</section>
+
+			<section class='sectionContents borderNorm'> 
+				<img src='images/projects/java-diamond.png' alt='' />
+				
+				<div class='title_description'>
+					<h3>Title</h3>
+					<p>
+						The quick brown fox jumps over the lazy dog
+					</p>
+				</div>
+			</section>
 		</section>
 
-		<section class="sectionContents" id="personal" onclick="goto('https://chesbarr.github.io/Personal-Homepage/index.html');"> 
-			<div class="innerContent">
-				<h2>Personal Info</h2>
-				<img class="mainImg" src="images/mypics/me17.jpg" alt="me17.jpg" />
-			</div>
-			<div class="subImgContainer">
-				<img class="subImg" src="images/mypics/me16.jpg" alt="me16.jpg" />
-				<img class="subImg" src="images/mypics/me12.jpg" alt="me12.jpg" />
-				<img class="subImg" src="images/mypics/me2.jpg" alt="me2.jpg" />
-				<img class="subImg" src="images/mypics/me6.jpg" alt="me6.jpg" />
-			</div>
+		<h1 class='sectionTitle' id='achievements'>Achievements</h1>
+		<section class='mainSection'>
+			<section class='sectionContents borderNorm' >
+				<img src='images/mypics/itik-itik.gif' alt='' />
+				
+				<div class='title_description'>
+					<h3>Title</h3>
+					<p>
+						The quick brown fox jumps over the lazy dog
+					</p>
+				</div>
+			</section>
+
+			<section class='sectionContents borderNorm reverseH'>
+				<img src='images/mypics/itik-itik.gif' alt='' />
+				
+				<div class='title_description'>
+					<h3>Title</h3>
+					<p>
+						The quick brown fox jumps over the lazy dog
+					</p>
+				</div>
+			</section>
+
+			<section class='sectionContents borderNorm'> 
+				<img src='images/mypics/itik-itik.gif' alt='' />
+				
+				<div class='title_description'>
+					<h3>Title</h3>
+					<p>
+						The quick brown fox jumps over the lazy dog
+					</p>
+				</div>
+			</section>
 		</section>
 
-		<section class="sectionContents" id="achievements" onclick="goto('');">
-			<div class="innerContent">
-				<h2>Achievements</h2>
-				<img class="mainImg" src="images/" alt="" />
-			</div>
-			<div class="subImgContainer">
-				<img class="subImg" src="images/" alt="" />
-				<img class="subImg" src="images/" alt="" />
-				<img class="subImg" src="images/" alt="" />
-			</div>
-		</section>
+		<div class='fog' id='personalModalFog' onclick="collapseModal('personalModal','personalModalFog');"></div>
+		<form>
+			<div class="modalform" id="personalModal">
+				<h2> Personal Details </h2>
+				<div class="formpage">
+					<img src='images/mypics/me17.jpg' alt='me17.jpg'>
+					<div class="innerdiv">
+						<div class="titleandinput">
+							<label><b>First Name: </b></label>
+							<input type="text" value='Chester Barry' readonly autocomplete='off'></input>
+						</div>
 
-		<section class="sectionContents" id="projects" onclick="goto('');">
-			<div class="innerContent">
-				<h2>Projects</h2>
-				<img class="mainImg" src="images/" alt="" />
-			</div>
-			<div class="subImgContainer">
-				<img class="subImg" src="images/projects/java-diamond.png" alt="java-diamond.png" />
-				<img class="subImg" src="images/" alt="" />
-				<img class="subImg" src="images/" alt="" />
-			</div>
-		</section>
+						<div class="titleandinput">
+							<label><b>Last Name: </b></label>
+							<input type="text" value='Dapatnapo' readonly autocomplete='off'></input>
+						</div>
 
-		<section class="sectionContents" id="gallery" onclick="goto('');">
-			<div class="innerContent">
-				<h2>Gallery</h2>
-				<img class="mainImg" src="images/games/mc-acelava.gif" alt="mc-acelava.gif" />
-			</div>
-			<div class="subImgContainer">
-				<img class="subImg" src="images/games/mc-survivalHome.jpg" alt="mc-survivalHome.jpg" />
-				<img class="subImg" src="images/games/chess-tricked.gif" alt="chess-tricked.gif" />
-				<img class="subImg" src="images/games/chessezmate.gif" alt="chessezmate.gif" />
-			</div>
-		</section>
+						<div class="titleandinput">
+							<label><b>Middle Name: </b></label>
+							<input type="text" value='Aslarona' readonly autocomplete='off'></input>
+						</div>
 
-		<footer id="socials">
+						<div class="titleandinput">
+							<label><b>Gender: </b></label>
+								<input type='radio' checked name='gender'>Male  
+								<input type='radio' name='gender'>Female  
+								<input type='radio' name='gender'>Other  
+						</div>
+
+						<div class="titleandinput">
+							<label><b>Address: </b></label>
+							<input type="text" value='Novaliches Brgy. Bagbag Quezon City' readonly autocomplete='off'></input>
+						</div>
+
+						<div class="titleandinput">
+							<label><b>Date of Birth: </b></label>
+							<input type="text" value='07/21/2003' autocomplete='off'></input>
+						</div>
+					</div>
+					<div class="innerdiv">
+						<div class="titleandinput">
+							<label><b>Email: </b></label>
+							<input type='email' value='dapatnapochesterbarry@gmail.com' readonly autocomplete='off'></input>
+						</div>
+
+						<div class="titleandinput">
+							<label><b>Contact No.: </b></label>
+							<input type="number" value='09685418437' readonly autocomplete='off'></input>
+						</div>
+
+						<div class="titleandinput notes">
+							<label><b>Notes: </b></label>
+							<textarea col='25' row='5' readonly autocomplete='off'>abcdefghijklmnopqrstuvwxyz</textarea>
+						</div>
+
+						<label><b>Checkout my Personal-Homepage</b></label>
+						<a href='https://chesbarr.github.io/Personal-Homepage/index.html'>https://chesbarr.github.io/Personal-Homepage/index.html</a>
+					</div>
+				</div>
+			</div>
+		</form>
+
+		<footer class='borderNorm' id="socials">
 			<section class="footerSection">
 				<label
 					>Email:
