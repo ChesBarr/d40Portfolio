@@ -161,8 +161,8 @@ form {
         margin: 60px 0;
     }
     .sectionContents img {
-        height: 180px;
-        width: 250px;
+        height: 120px;
+        width: 170px;
     }
     .sectionContents .title_description h3 {
         font-size: .8rem;
@@ -170,6 +170,9 @@ form {
     }
     .sectionContents .title_description p {
         font-size: .7rem;
+    }
+    .sectionContents .title_description p a {
+        font-size: .5rem;
     }
     
     .modalform {

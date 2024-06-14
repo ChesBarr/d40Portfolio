@@ -51,6 +51,8 @@
 
 .borderNorm:hover {
     border: 1px solid #c60;
+    border-left: 0;
+    border-right: 0;
 }
 .reverseH {
     flex-direction: row-reverse;
