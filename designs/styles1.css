@@ -15,6 +15,7 @@ header p {
 
 #myProfile {
 	background-color: transparent;
+    border: 1px solid var(--borders);
 	border-radius: 15%;
 	box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.3);
 
@@ -44,7 +45,7 @@ header p {
 	display: flex;
 }
 .sectionContents img {
-	border: 1px solid var(--borders);
+	border: 1px solid white;
 }
 .sectionContents:hover img, .sectionContents:hover {
 	
@@ -53,9 +54,8 @@ header p {
 	text-align: center;
 	flex-grow: 1;
 }
-
-form {
-	display: flex;
+.sectionContents .title_description p a {
+    color: var(--links);
 }
 
 /* ^ Content Sections ^ */
@@ -72,31 +72,31 @@ form {
     z-index: 10;
 }
 .modalform {
-    padding: 5%;
     position: fixed;
     top: 50%;
     left: 50%;
-    width: 1000px;
     transform: translate(-50%, -50%);
 
-    /* display: none; */
+    display: none;
+    flex-direction: column;
     
     border: 1px solid var(--borders);
     background-color: var(--nav-bg);
-    box-shadow: 10px 3vh 20px 0px rgba(0, 0, 0, 0.3);
+
     z-index: 11;
+}
+.modalform h2 {
+    text-align: center;
 }
 .formpage {
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
     align-items: center;
     margin: 3%;
     margin-top: 0;
 }
-.formpage img, .userProfileBar img {
-    height: 180px;
-    width: 180px;
+.formpage img {
+    border: 1px solid var(--borders);
     border-radius: 50%;
 }
 .innerdiv {
@@ -111,8 +111,10 @@ form {
 }
 .titleandinput {
     display: flex;
-    width: 100%;
-    margin: 2% 5%;
+    justify-content: space-between;
+}
+.titleandinput label b {
+    text-wrap: nowrap;
 }
 .invert {
     display: flex;

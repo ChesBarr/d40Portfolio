@@ -40,7 +40,7 @@
 				Welcome to my Portfolio Website!<br /><br />
 				I am Dapatnapo, Chester
 			</p>
-			<img class='borderNorm' id="myProfile" src="images/mypics/formal1x1.jpg" alt="me" />
+			<img id="myProfile" src="images/mypics/formal1x1.jpg" alt="me" />
 		</header>
 
 		<section class="specialties">
@@ -56,34 +56,75 @@
 		<h1 class='sectionTitle' id='projects'>Projects</h1>
 		<section class='mainSection'>
 			<section class='sectionContents borderNorm' >
-				<img src='images/projects/java-diamond.png' alt='' />
+				<img src='images/projects/korteSupremaProject.png' alt='korteSupremaProject.png' />
 				
 				<div class='title_description'>
-					<h3>Title</h3>
+					<h3>Legal Case Management System</h3>
 					<p>
-						The quick brown fox jumps over the lazy dog
+						Simple fully functional Legal Case Management System with User, Admin,
+						Staff, Hierarchy System, Simple Messaging System, Client/Case CRUD
+						and Assigning, and a Search Query.
 					</p>
 				</div>
 			</section>
 
 			<section class='sectionContents borderNorm reverseH'>
-				<img src='images/projects/java-diamond.png' alt='' />
+				<img src='images/projects/brgysystem.png' alt='brgysystem.png' />
 				
 				<div class='title_description'>
-					<h3>Title</h3>
+					
+					<h3>CRUD w/ auto Database</h3>
 					<p>
-						The quick brown fox jumps over the lazy dog
+						A Simple CRUD Barangay theme, focused on 
+						frontend side it has an automatic database creation, 
+						modified for convenience. I have done Multiple
+						projects like this
 					</p>
 				</div>
 			</section>
 
 			<section class='sectionContents borderNorm'> 
-				<img src='images/projects/java-diamond.png' alt='' />
+				<img src='images/projects/airamsite.png' alt='' />
 				
 				<div class='title_description'>
-					<h3>Title</h3>
+					<h3>AIRAM &#40;Make up site&#41;</h3>
 					<p>
-						The quick brown fox jumps over the lazy dog
+						Simple Make up site &#40;FRONTEND ONLY&#41;, focused 
+						on javascript having a CRUD, searching and sorting
+						product system&#40;client-side only&#41;
+						<br /><br /><a href='https://chesbarr.github.io/AIRAM_Uploaded/'>https://chesbarr.github.io/AIRAM_Uploaded/</a>
+					</p>
+				</div>
+			</section>
+
+			<section class='sectionContents borderNorm reverseH'>
+				<img src='images/projects/personal-homepage.png' alt='brgysystem.png' />
+				
+				<div class='title_description'>
+					
+					<h3>My Personal Homepage</h3>
+					<p>
+						My Personal Homepage, A Responsive Website I 
+						made when I was a beginner! have fun interacting 
+						with the elements with animations!
+						<br /><br /><a href='https://chesbarr.github.io/Personal-Homepage/index.html'>https://chesbarr.github.io/Personal-Homepage/index.html</a>
+					</p>
+				</div>
+			</section>
+
+			<section class='sectionContents borderNorm' >
+				<img src='images/projects/cppquizproject.png' alt='korteSupremaProject.png' />
+				
+				<div class='title_description'>
+					<h3>C++ Quiz System</h3>
+					<p>
+						A Fully Functional C++ Project with a Log-in System
+						that handles multiple students and tracks their scores 
+						of their subjects and their attempts. Users can also 
+						re-attempt and clear choices in a certain question of a 
+						subject. Users will get their accurate zodiac and age 
+						by just providing their birthdate, Scoreboard which will 
+						display the student's scores and averages.
 					</p>
 				</div>
 			</section>
@@ -95,42 +136,44 @@
 				<img src='images/mypics/itik-itik.gif' alt='' />
 				
 				<div class='title_description'>
-					<h3>Title</h3>
+					<h3>Itik-itik</h3>
 					<p>
-						The quick brown fox jumps over the lazy dog
+						I know how to dance itik-itik
 					</p>
 				</div>
 			</section>
 
 			<section class='sectionContents borderNorm reverseH'>
-				<img src='images/mypics/itik-itik.gif' alt='' />
+				<img src='images/games/dragon_defeated.jpg' alt='' />
 				
 				<div class='title_description'>
-					<h3>Title</h3>
+					<h3>Defeated the Ender Dragon</h3>
 					<p>
-						The quick brown fox jumps over the lazy dog
+						I have defeated the Ender dragon once in one of my 
+						speedruns in Minecraft
 					</p>
 				</div>
 			</section>
 
-			<section class='sectionContents borderNorm'> 
-				<img src='images/mypics/itik-itik.gif' alt='' />
+			<section class='sectionContents borderNorm' >
+				<img src='images/games/hilter.jpg' alt='' />
 				
 				<div class='title_description'>
-					<h3>Title</h3>
+					<h3>Na Gen</h3>
 					<p>
-						The quick brown fox jumps over the lazy dog
+						I was once a great general of the N*zi empire and lead glory and victory to the empire!
 					</p>
 				</div>
 			</section>
 		</section>
-
+		
 		<div class='fog' id='personalModalFog' onclick="collapseModal('personalModal','personalModalFog');"></div>
 		<form>
 			<div class="modalform" id="personalModal">
 				<h2> Personal Details </h2>
 				<div class="formpage">
 					<img src='images/mypics/me17.jpg' alt='me17.jpg'>
+
 					<div class="innerdiv">
 						<div class="titleandinput">
 							<label><b>First Name: </b></label>
@@ -149,21 +192,17 @@
 
 						<div class="titleandinput">
 							<label><b>Gender: </b></label>
-								<input type='radio' checked name='gender'>Male  
-								<input type='radio' name='gender'>Female  
-								<input type='radio' name='gender'>Other  
-						</div>
-
-						<div class="titleandinput">
-							<label><b>Address: </b></label>
-							<input type="text" value='Novaliches Brgy. Bagbag Quezon City' readonly autocomplete='off'></input>
+							<input type='radio' disabled checked name='gender'>Male  
+							<input type='radio' disabled name='gender'>Female  
+							<input type='radio' disabled name='gender'>Other  
 						</div>
 
 						<div class="titleandinput">
 							<label><b>Date of Birth: </b></label>
-							<input type="text" value='07/21/2003' autocomplete='off'></input>
+							<input type="text" value='07/21/2003' readonly autocomplete='off'></input>
 						</div>
 					</div>
+
 					<div class="innerdiv">
 						<div class="titleandinput">
 							<label><b>Email: </b></label>
@@ -176,13 +215,14 @@
 						</div>
 
 						<div class="titleandinput notes">
-							<label><b>Notes: </b></label>
-							<textarea col='25' row='5' readonly autocomplete='off'>abcdefghijklmnopqrstuvwxyz</textarea>
+							<label><b>Address: </b></label>
+							<textarea col='25' row='5' readonly autocomplete='off'>Novaliches Brgy. Bagbag Quezon City</textarea>
 						</div>
 
-						<label><b>Checkout my Personal-Homepage</b></label>
+						<label><b>Checkout my Personal-Homepage!</b></label>
 						<a href='https://chesbarr.github.io/Personal-Homepage/index.html'>https://chesbarr.github.io/Personal-Homepage/index.html</a>
 					</div>
+					
 				</div>
 			</div>
 		</form>

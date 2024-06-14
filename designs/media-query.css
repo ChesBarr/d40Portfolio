@@ -28,13 +28,6 @@ nav ul li a {
     font-size: 1.5rem;
 }
 
-#openAside {
-    width: 70px;
-}
-aside {
-	width: 200px;
-}
-
 footer {
     margin-top: 300px;
     flex-direction: row;
@@ -74,8 +67,8 @@ footer {
     margin: 100px 0;
 }
 .sectionContents img {
-	height: 550px;
-    width: 600px;
+	height: 450px;
+    width: 700px;
 }
 .sectionContents .title_description h3 {
     font-size: 2rem;
@@ -83,15 +76,27 @@ footer {
 }
 .sectionContents .title_description p {
     font-size: 1.2rem;
+    margin: 0 10%;
 }
 
+.modalform {
+    padding: 5%;
+}
 form {
     padding: 20px 10px;
 }
-.modalform {
+.formpage {
     justify-content: flex-start;
     align-items: center;
-    flex-direction: column;
+    flex-direction: row;
+}
+.formpage img {
+    height: 300px;
+    width: 400px;
+}
+.titleandinput {
+    margin: 5% 10%;
+    width: 100%;
 }
 
 /* Extra Small Devices (Phones) */
@@ -122,10 +127,6 @@ form {
     #myProfile {
         height: 150px;
         width: 150px;
-    }
-    
-    #openAside {
-        width: 40px;
     }
 
     footer {
@@ -160,8 +161,8 @@ form {
         margin: 60px 0;
     }
     .sectionContents img {
-        height: 250px;
-        width: 300px;
+        height: 180px;
+        width: 250px;
     }
     .sectionContents .title_description h3 {
         font-size: .8rem;
@@ -170,13 +171,25 @@ form {
     .sectionContents .title_description p {
         font-size: .7rem;
     }
-
+    
+    .modalform {
+        padding: 2%;
+    }
     form {
         padding: 20px 5px;
     }
-    .modalform {
+    .formpage {
+        justify-content: flex-start;
         align-items: center;
-        flex-direction: row;
+        flex-direction: column;
+    }
+    .formpage img {
+        height: 150px;
+        width: 130px;
+    }
+    .titleandinput  {
+        width: 100%;
+        margin: 2% 5%;
     }
 }
   
