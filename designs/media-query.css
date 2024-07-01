@@ -62,7 +62,7 @@ footer {
 .mainSection {
 
 }
-.sectionContents {
+.sectionContents, .sectionPerformance {
     padding: 50px 0;
     margin: 100px 0;
 }
@@ -77,6 +77,16 @@ footer {
 .sectionContents .title_description p {
     font-size: 1.2rem;
     margin: 0 10%;
+}
+
+.ama-shs {
+    margin: 30px 0;
+}
+.ama-shs tr th {
+    padding: 15px;
+}
+.ama-shs tr td {
+    padding: 5px;
 }
 
 .modalform {
@@ -156,7 +166,7 @@ form {
     .mainSection {
     
     }
-    .sectionContents {
+    .sectionContents, .sectionPerformance {
         padding: 30px 0;
         margin: 60px 0;
     }
