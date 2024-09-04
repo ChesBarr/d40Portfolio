@@ -32,6 +32,8 @@ header p {
 }
 .specialties img {
 	position: relative;
+
+    transition: .3s;
 }
 
 .sectionTitle {

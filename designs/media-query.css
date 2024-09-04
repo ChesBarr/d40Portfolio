@@ -52,6 +52,14 @@ footer {
 	height: 80px;
     width: 80px;
 }
+.specialties img:hover {
+    height: 8rem;
+    width: 8rem;
+}
+.specialties img:active {
+    height: 5rem;
+    width: 5rem;
+}
 
 .sectionTitle {
     margin: 300px 0 0;
@@ -158,6 +166,14 @@ form {
     .specialties img {
         height: 50px;
         width: 50px;
+    }
+    .specialties img:hover {
+        height: 5rem;
+        width: 5rem;
+    }
+    .specialties img:active {
+        height: 3rem;
+        width: 3rem;
     }
 
     .sectionTitle {

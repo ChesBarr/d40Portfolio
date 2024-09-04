@@ -85,16 +85,20 @@ nav {
 	
 	z-index: 5;
 }
-nav h2 {
-	color: var(--neutral);
+nav h2 a {
+    color: var(--text-color);
+    text-decoration: none;
 }
-nav h2 span {
+nav h2 a span {
     color: transparent;
-    transition: .5s;
 }
-nav h2 span:hover {
+nav h2 a, nav h2 a span, nav ul li a {
+    transition: .3s;
+}
+nav h2 a:hover, nav h2 a:hover span {
 	color: var(--neutral);
 }
+
 nav ul {
 	list-style: none;
 	display: flex;
@@ -102,6 +106,9 @@ nav ul {
 nav ul li a {
     text-decoration: none;
     color: var(--text-color);
+}
+nav ul li a:hover {
+    color: var(--neutral);
 }
 
 /* ^ Navigation Code ^ */
@@ -128,11 +135,25 @@ footer {
     font-family: Arial;
     color: white;
 }
-.footerSection label a, .footerSection ul li a i {
+.footerSection ul li a, .footerSection ul li a i {
+    color: white;
+    text-decoration: none;
+}
+#socials {
+    display: flex;
+    flex-direction: column;
+
+    padding: 20px;
+    margin: 0;
+
+    font-family: Arial;
     color: white;
 }
-.footerSection label a {
-    text-decoration: none;
+#socials li {
+    display: flex;
+    justify-content: space-between;
+    
+    margin: 10px;
 }
 .footerSection ul {
     list-style-type: none;
