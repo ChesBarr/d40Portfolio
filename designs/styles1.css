@@ -23,7 +23,7 @@ header p {
 }
 /* ^ Header Section ^ */
 /*********************************************************************************/
-/* ^ Content Sections ^ */
+/* v Content Sections v */
 
 .specialties {
 	display: flex;
@@ -34,6 +34,11 @@ header p {
 	position: relative;
 
     transition: .3s;
+}
+
+#academics {
+    list-style-type: none;
+    font-weight: 700;
 }
 
 .sectionTitle {
