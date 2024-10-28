@@ -11,18 +11,18 @@
 
 /* DARK MODE (DEFAULT) */
 :root {
-	--background-color: #000; /* Default Dark mode background color */
-    --text-color: #fff; /* Default Dark mode text color */
-    --background-color-oppose: #fff;
-    --text-color-oppose: #002;
-	--nav-bg: #122;
+	--background-color: #ccc; /* Default Dark mode background color */
+    --text-color: #000; /* Default Dark mode text color */
+    --background-color-oppose: #000;
+    --text-color-oppose: #fff;
+	--nav-bg: #abc;
 
-    --neutral: #66f;
+    --neutral: #0fa;
     --highlight: #f9f;
-    --borders: aqua;
+    --borders: #00f;
 
     --links: magenta;
-    --footer: #123;
+    --footer: #555;
 
     transition: .3s;
 }

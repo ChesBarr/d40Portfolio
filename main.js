@@ -16,6 +16,14 @@ function collapseModal(elementId,fogId){
     fog.style.display = 'none';
 }
 
+
+function toggleImage() {
+    const file_loc = 'images/mypics/';
+    const image = document.getElementById('myProfile');
+    image.src = image.src.includes(file_loc + 'formal1x1.jpg') ? file_loc + 'smile-informal.gif' : file_loc + 'formal1x1.jpg';
+}
+
+
 // Table Grades Code
 
 // // G11 1st Sem
