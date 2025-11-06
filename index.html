@@ -1,826 +1,943 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Dapatnapo Portfolio Website</title>
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-			integrity="sha512-Q7h/MEP+ZONBrwQpNjHR2x+9Y23VIbM/PhorM2X7iX/ydq0GjlM9nhtBpUv4LgD+gZeWwg50Bv31S9LQbXtbhA=="
-			crossorigin="anonymous"
-			referrerpolicy="no-referrer"
-		/>
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-			integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-			crossorigin="anonymous"
-			referrerpolicy="no-referrer"
-		/>
-		<link rel="icon" href="images/.png" type="image/x-icon" />
-		<link rel="stylesheet" href="designs/media-query.css" type="text/css" />
-		<link rel="stylesheet" href="designs/main.css" type="text/css" />
-		<link rel="stylesheet" href="designs/styles1.css" type="text/css" />
-	</head>
-	<body>
-		<nav class='borderNorm'>
-			<h2><a href='#top'>Dapatnapo, Chester Barry A<span>slarona</span></a></h2>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Dapatnapo Portfolio Website</title>
+	<link rel="icon" href="assets/img/formal1x1.jpg" type="image/x-icon" />
+	<!-- <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"> -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/media-query.css" type="text/css" />
+	<link rel="stylesheet" href="assets/css/main.css" type="text/css" />
+	<link rel="stylesheet" href="assets/css/styles1.css" type="text/css" />
+</head>
+<body>
+	<nav class='borderNorm'>
+		<h2><a href='#top'>Dapatnapo, Chester Barry A<span>slarona</span></a></h2>
 
-			<ul>
-				<!-- <button id="lightModeToggle">theme</button> -->
-				<li><a href='#projects'>Projects</a></li>
-				<li><a href='#achievements'>Achievements</a></li>
-				<li><a onclick="openModal('personalModal','personalModalFog');">Personal</a></li>
-			</ul>
-		</nav>
+		<ul>
+			<!-- <button id="lightModeToggle">theme</button> -->
+			<li><a href='#projects'>Projects</a></li>
+			<li><a href='#achievements'>Achievements</a></li>
+			<li><a onclick="openModal('personalModal','personalModalFog');">Personal</a></li>
+		</ul>
+	</nav>
+
+	<!-- <div class="container mt-5">
+        <button class="btn btn-primary">Bootstrap Button</button>
+    </div> -->
 
 
-		<header>
-			<p>
-				Welcome to my Portfolio Website!<br /><br />
-				I am Dapatnapo, Chester
-			</p>
-			<img onclick="toggleImage()" id="myProfile" src="images/mypics/formal1x1.jpg" alt="me" />
-		</header>
-
-
-		<section class="specialties">
-			<img src="images/projects/logos/logo-html.png" alt="logo-html.png" />
-			<img src="images/projects/logos/logo-css.png" alt="logo-css.png" />
-			<img src="images/projects/logos/logo-js.png" alt="logo-js.png" />
-			<img src="images/projects/logos/logo-php.png" alt="logo-php.png" />
-			<img src="images/projects/logos/logo-sql.svg" alt="logo-sql.svg" />
-			<img src="images/projects/logos/logo-c.png" alt="logo-c.png" />
-			<img src="images/projects/logos/logo-cpp.png" alt="logo-cpp.png" />
-		</section>	
-
-
-		<h1 class='sectionTitle' id='projects'>Projects</h1>
-		<section class='mainSection'>
-			<section class='sectionContents borderNorm' >
-				<img src='images/projects/korteSupremaProject.png' alt='korteSupremaProject.png' />
-				
-				<div class='title_description'>
-					<h3>Legal Case Management System</h3>
-					<p>
-						Simple fully functional Legal Case Management System with User, Admin,
-						Staff, Hierarchy System, Simple Messaging System, Client/Case CRUD
-						and Assigning, and a Search Query.
-					</p>
-				</div>
-			</section>
-
-			<section class='sectionContents borderNorm reverseH'>
-				<img src='images/projects/brgysystem.png' alt='brgysystem.png' />
-				
-				<div class='title_description'>
-					
-					<h3>CRUD w/ auto Database</h3>
-					<p>
-						A Simple CRUD Barangay theme, focused on 
-						frontend side it has an automatic database creation, 
-						modified for convenience. I have done Multiple
-						projects like this
-					</p>
-				</div>
-			</section>
-
-			<section class='sectionContents borderNorm'> 
-				<img src='images/projects/airamsite.png' alt='' />
-				
-				<div class='title_description'>
-					<h3>AIRAM &#40;Make up site&#41;</h3>
-					<p>
-						Simple Make up site &#40;FRONTEND ONLY&#41;, focused 
-						on javascript having a CRUD, searching and sorting
-						product system&#40;client-side only&#41;
-						<br /><br /><a href='https://chesbarr.github.io/AIRAM_Uploaded/'>https://chesbarr.github.io/AIRAM_Uploaded/</a>
-					</p>
-				</div>
-			</section>
-
-			<section class='sectionContents borderNorm reverseH'>
-				<img src='images/projects/personal-homepage.png' alt='brgysystem.png' />
-				
-				<div class='title_description'>
-					
-					<h3>My Personal Homepage</h3>
-					<p>
-						My Personal Homepage, A Responsive Website I 
-						made when I was a beginner! have fun interacting 
-						with the elements with animations!
-						<br /><br /><a href='https://chesbarr.github.io/Personal-Homepage/index.html'>https://chesbarr.github.io/Personal-Homepage/index.html</a>
-					</p>
-				</div>
-			</section>
-
-			<section class='sectionContents borderNorm' >
-				<img src='images/projects/cppquizproject.png' alt='korteSupremaProject.png' />
-				
-				<div class='title_description'>
-					<h3>C++ Quiz System</h3>
-					<p>
-						My very first biggest project made as I was a beginner
-						<br /><br />A Fully Functional C++ Project with a Log-in System
-						that handles multiple students and tracks their scores 
-						of their subjects and their attempts. Users can also 
-						re-attempt and clear choices in a certain question of a 
-						subject. Users will get their accurate zodiac and age 
-						by just providing their birthdate, Scoreboard which will 
-						display the student's scores and averages.
-					</p>
-				</div>
-			</section>
-		</section>
-
-
-		<h1 class='sectionTitle' id='achievements'>Achievements</h1>
-		<section class='mainSection'>
-			<section class='sectionContents borderNorm' >
-				<img src='images/projects/achievements/progchampionbcp.jpg' alt='progchampionbcp.jpg' />
-				
-				<div class='title_description'>
-					<h3>Programming Champion</h3>
-					<p>
-						I won a programming competition in my 2nd year in an IT 
-						Festival held at Bestlink college of the Philippines
-					</p>
-				</div>
-			</section>
-
-			<section class='sectionContents borderNorm reverseH'>
-				<img src='images/projects/achievements/ama-second-place-quiz-bee.jpg' alt='ama-second-place-quiz-bee.jpg' />
-				
-				<div class='title_description'>
-					<h3>2nd Place Quiz Bee</h3>
-					<p>
-						We placed 2nd in a quiz bee held at AMA University when I was 
-						in Grade 11 Senior HIgh School
-					</p>
-				</div>
-			</section>
-
-			<section class='sectionContents borderNorm'>
-				<img src='images/projects/achievements/bcp-mayor-certificate.jpg' alt='bcp-mayor-certificate.jpg' />
-				
-				<div class='title_description'>
-					<h3>Class Mayor</h3>
-					<p>
-						I acted as a class mayor multiple times during my 
-						college years, aspiring to be a great leader
-					</p>
-				</div>
-			</section>
-
-			<section class='sectionContents borderNorm reverseH'>
-				<img src='images/projects/achievements/comm-service-nstp.jpg' alt='comm-service-nstp.jpg' />
-				
-				<div class='title_description'>
-					<h3>Community Service</h3>
-					<p>
-						I participated in organizing a Feeding Program for our 
-						NSTP Community Service during my Freshmen Year. 
-					</p>
-				</div>
-			</section>
-
-		</section>
+	<header>
+		<p>
+			Welcome to my Portfolio Website!<br />
+			I am Chester
+		</p>
+		<img id="myProfile" src="assets/img/formal1x1.jpg" alt="me" />
+	</header>	
 	
+	<section class="skills-section container my-5">
+    <h2 class="text-center mb-4">Specialties</h2>
+    
+    <div class="row g-4">
+        <!-- HTML/CSS -->
+        <div class="col-md-6">
+            <div class="skill-item d-flex align-items-center">
+                <div class="skill-icon me-3">
+                    <img src="assets/img/logo-html.png" alt="HTML" class="img-fluid" style="width: 40px; height: 40px;">
+                </div>
+                <div class="skill-progress flex-grow-1">
+                    <h6 class="mb-1">HTML/CSS</h6>
+                    <div class="progress" style="height: 10px;">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <small class="text-muted">70%</small>
+                </div>
+            </div>
+        </div>
 
-		<details class='mainSection'>
-			<summary class='sectionTitle' id='academics'>Academics</summary>
+        <!-- JavaScript -->
+        <div class="col-md-6">
+            <div class="skill-item d-flex align-items-center">
+                <div class="skill-icon me-3">
+                    <img src="assets/img/logo-js.png" alt="JavaScript" class="img-fluid" style="width: 40px; height: 40px;">
+                </div>
+                <div class="skill-progress flex-grow-1">
+                    <h6 class="mb-1">JavaScript</h6>
+                    <div class="progress" style="height: 10px;">
+                        <div class="progress-bar bg-warning" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <small class="text-muted">50%</small>
+                </div>
+            </div>
+        </div>
 
-			<section class='sectionPerformance borderNorm'>
-				<!-- <a href="images/projects/achievements/Grade11Slip1stSem.pdf" download>Grade11Slip1stSem.pdf</a> -->
-				<!-- <embed src="images/projects/achievements/Grade11Slip1stSem.pdf" type="application/pdf"> -->
-				<!-- <select id="yearSel" onchange="change_tbl(this)">
-					<option value="g11_semA">Grade 11 1st Sem</option>
-					<option value="g11_semB" selected>Grade 11 2nd Sem</option>
-					<option value="g12_semA">Grade 12 1st Sem</option>
-					<option value="g12_semB">Grade 12 2nd Sem</option>
-					<option value="frst_semA">First Year 1st Sem</option>
-					<option value="frst_semB">First Year 2nd Sem</option>
-					<option value="second_semA">Second Year 1st Sem</option>
-					<option value="second_semB">Second Year 2nd Sem</option>
-				</select> -->
+        <!-- PHP -->
+        <div class="col-md-6">
+            <div class="skill-item d-flex align-items-center">
+                <div class="skill-icon me-3">
+                    <img src="assets/img/logo-php.png" alt="PHP" class="img-fluid" style="width: 40px; height: 40px;">
+                </div>
+                <div class="skill-progress flex-grow-1">
+                    <h6 class="mb-1">PHP</h6>
+                    <div class="progress" style="height: 10px;">
+                        <div class="progress-bar bg-primary" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <small class="text-muted">80%</small>
+                </div>
+            </div>
+        </div>
 
-				<h2>1st Year SHS 1st Sem: ICT - Animation</h2>
-				<table class='ama-shs'>
-					<tr>
-						<th>Subjects</th>
-						<th colspan='2' style='padding: 0;'>Quarter
-							<table style='width: 100%; border-collapse: collapse;'>
-								<tr>
-								  <td>1st</td>
-								  <td>2nd</td>
-								</tr>
-							</table>
-						</th>
-						<th>Semester Final Grade</th>
-					</tr>
-					<tr>
-						<td>Earth Science</td>
-						<td>84</td>
-						<td>88</td>
-						<td>86</td>
-					</tr>
-					<tr>
-						<td>Empowerment Technologies &#40;E-Tech&#41;: ICT for Professional Tracks</td>
-						<td>87</td>
-						<td>74</td>
-						<td>81</td>
-					</tr>
-					<tr>
-						<td>English for Academic and Professional Purposes</td>
-						<td>85</td>
-						<td>80</td>
-						<td>83</td>
-					</tr>
-					<tr>
-						<td>General Mathematics</td>
-						<td>80</td>
-						<td>78</td>
-						<td>79</td>
-					</tr>
-					<tr>
-						<td>Homeroom G11A</td>
-						<td>Excellent</td>
-						<td>Excellent</td>
-						<td>Good</td>
-					</tr>
-					<tr>
-						<td>Introduction to Philosophy of the Human Person/Pambungad sa Pilosopiya ng Tao</td>
-						<td>73</td>
-						<td>77</td>
-						<td>75</td>
-					</tr>
-					<tr>
-						<td>Oral Communication in Context</td>
-						<td>82</td>
-						<td>78</td>
-						<td>80</td>
-					</tr>
-					<tr>
-						<td>Physical Education &amp; Health G11A</td>
-						<td>77</td>
-						<td>93</td>
-						<td>85</td>
-					</tr>
-					<tr>
-						<td>Understanding Culture, Society and Politics</td>
-						<td>85</td>
-						<td>88</td>
-						<td>87</td>
-					</tr>
-				</table>
-				<h4>General Average for Sem: <span>82</span></h4>
-			
-				<h2>1st Year SHS 2nd Sem: ICT - Animation</h2>
-				<table class='ama-shs'>
-					<tr>
-						<th>Subjects</th>
-						<th colspan='2' style='padding: 0;'>Quarter
-							<table style='width: 100%; border-collapse: collapse;'>
-								<tr>
-								<td>3rd</td>
-								<td>4th</td>
-								</tr>
-							</table>
-						</th>
-						<th>Semester Final Grade</th>
-					</tr>
-					<tr>
-						<td>21st Century Literature from the Philippines and the World</td>
-						<td>84</td>
-						<td>94</td>
-						<td>89</td>
-					</tr>
-					<tr>
-						<td>Animation &#40; NC II&#41; Part 1</td>
-						<td>92</td>
-						<td>92</td>
-						<td>92</td>
-					</tr>
-					<tr>
-						<td>Homeroom G11B</td>
-						<td>Excellent</td>
-						<td>Excellent</td>
-						<td>Good</td>
-					</tr>
-					<tr>
-						<td>Physical Education &amp; Health G11B</td>
-						<td>90</td>
-						<td>93</td>
-						<td>92</td>
-					</tr>
-					<tr>
-						<td>Physical Science</td>
-						<td>83</td>
-						<td>91</td>
-						<td>87</td>
-					</tr>
-					<tr>
-						<td>Practical Research 1</td>
-						<td>82</td>
-						<td>93</td>
-						<td>88</td>
-					</tr>
-					<tr>
-						<td>Reading and Writing Skills</td>
-						<td>85</td>
-						<td>93</td>
-						<td>89</td>
-					</tr>
-					<tr>
-						<td>Statistics and Probability</td>
-						<td>81</td>
-						<td>90</td>
-						<td>86</td>
-					</tr>
-				</table>
-				<h4>General Average for Sem: <span>89</span></h4>
-			</section>
+        <!-- MySQL -->
+        <div class="col-md-6">
+            <div class="skill-item d-flex align-items-center">
+                <div class="skill-icon me-3">
+                    <img src="assets/img/logo-sql.svg" alt="MySQL" class="img-fluid" style="width: 40px; height: 40px;">
+                </div>
+                <div class="skill-progress flex-grow-1">
+                    <h6 class="mb-1">MySQL</h6>
+                    <div class="progress" style="height: 10px;">
+                        <div class="progress-bar bg-info" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <small class="text-muted">70%</small>
+                </div>
+            </div>
+        </div>
 
+        <!-- C -->
+        <div class="col-md-6">
+            <div class="skill-item d-flex align-items-center">
+                <div class="skill-icon me-3">
+                    <img src="assets/img/logo-c.png" alt="C" class="img-fluid" style="width: 40px; height: 40px;">
+                </div>
+                <div class="skill-progress flex-grow-1">
+                    <h6 class="mb-1">C</h6>
+                    <div class="progress" style="height: 10px;">
+                        <div class="progress-bar bg-secondary" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <small class="text-muted">50%</small>
+                </div>
+            </div>
+        </div>
 
-			<section class='sectionPerformance borderNorm'>
-				<h2>2nd Year SHS 1st Sem: ICT - Animation</h2>
-				<table class='ama-shs'>
-					<tr>
-						<th>Subjects</th>
-						<th colspan='2' style='padding: 0;'>Quarter
-							<table style='width: 100%; border-collapse: collapse;'>
-								<tr>
-								<td>1st</td>
-								<td>2nd</td>
-								</tr>
-							</table>
-						</th>
-						<th>Semester Final Grade</th>
-					</tr>
-					<tr>
-						<td>Animation &#40;NC II&#41; Part 2</td>
-						<td>84</td>
-						<td>85</td>
-						<td>85</td>
-					</tr>
-					<tr>
-						<td>Homeroom G12A</td>
-						<td>Satisfactory</td>
-						<td>Satisfactory</td>
-						<td>Satisfactory</td>
-					</tr>
-					<tr>
-						<td>Komunikasyon at Pananaliksik sa Wika ng Kulturang Pilipino</td>
-						<td>92</td>
-						<td>93</td>
-						<td>93</td>
-					</tr>
-					<tr>
-						<td>Media and Information Literacy</td>
-						<td>80</td>
-						<td>90</td>
-						<td>95</td>
-					</tr>
-					<tr>
-						<td>Pagsulat sa Filipino sa Piling Larangan &#40;Tech-Voc&#41;</td>
-						<td>92</td>
-						<td>89</td>
-						<td>91</td>
-					</tr>
-					<tr>
-						<td>Personal Development/Pansariling Kaunlaran</td>
-						<td>76</td>
-						<td>94</td>
-						<td>85</td>
-					</tr>
-					<tr>
-						<td>Physical Education &amp; Health G12A</td>
-						<td>85</td>
-						<td>92</td>
-						<td>89</td>
-					</tr>
-					<tr>
-						<td>Practical Research 2</td>
-						<td>90</td>
-						<td>89</td>
-						<td>90</td>
-					</tr>
-					<tr>
-						<td>Visual Graphic Design &#40;NC II&#41; Part 1</td>
-						<td>90</td>
-						<td>88</td>
-						<td>89</td>
-					</tr>
-				</table>
-				<h4>General Average for Sem: <span>88.38</span></h4>
-			
-				<h2>2nd Year SHS 2nd Sem: ICT - Animation</h2>
-				<table class='ama-shs'>
-					<tr>
-						<th>Subjects</th>
-						<th colspan='2' style='padding: 0;'>Quarter
-							<table style='width: 100%; border-collapse: collapse;'>
-								<tr>
-								<td>3rd</td>
-								<td>4th</td>
-								</tr>
-							</table>
-						</th>
-						<th>Semester Final Grade</th>
-					</tr>
-					<tr>
-						<td>Contemporary Philippine Arts from the Regions</td>
-						<td>88</td>
-						<td>85</td>
-						<td>87</td>
-					</tr>
-					<tr>
-						<td>Entrepreneurship</td>
-						<td>87</td>
-						<td>84</td>
-						<td>86</td>
-					</tr>
-					<tr>
-						<td>Homeroom G12B</td>
-						<td>Excellent</td>
-						<td>Excellent</td>
-						<td>Excellent</td>
-					</tr>
-					<tr>
-						<td>Inquiries, Investigations and Immersion</td>
-						<td>82</td>
-						<td>88</td>
-						<td>85</td>
-					</tr>
-					<tr>
-						<td>Pagbasa at Pagsusuri ng Iba't Ibang Teksto Tungo s</td>
-						<td>86</td>
-						<td>84</td>
-						<td>85</td>
-					</tr>
-					<tr>
-						<td>Physical Education &amp; Health G12B</td>
-						<td>90</td>
-						<td>89</td>
-						<td>90</td>
-					</tr>
-					<tr>
-						<td>Visual Graphic Design &#40;NC II&#41; Part 2</td>
-						<td>91</td>
-						<td>82</td>
-						<td>87</td>
-					</tr>
-					<tr>
-						<td>Work Immersion</td>
-						<td>88</td>
-						<td>89</td>
-						<td>89</td>
-					</tr>
-				</table>
-				<h4>General Average for Semester: <span>87</span></h4>
-			</section>
-
-
-			<section class='sectionPerformance borderNorm'>
-				<h2>1st Year College: BSIT</h2>
-				<table class='ama-shs'>
-					<tr>
-						<th>Course Code</th>
-						<th>Courses</th>
-						<th>1st Semester</th>
-					</tr>
-					<tr>
-						<td>PE1</td>
-						<td>Physical Fitness and Gymnastics</td>
-						<td>1.50</td>
-					</tr>
-					<tr>
-						<td>NSTP1</td>
-						<td>National Service Training Program 1</td>
-						<td>1.25</td>
-					</tr>
-					<tr>
-						<td>GE1</td>
-						<td>Understanding the Self</td>
-						<td>2.00</td>
-					</tr>
-					<tr>
-						<td>GE2</td>
-						<td>Reading in Philippine History</td>
-						<td>1.50</td>
-					</tr>
-					<tr>
-						<td>GE3</td>
-						<td>The Contemporary World</td>
-						<td>1.75</td>
-					</tr>
-					<tr>
-						<td>GE4</td>
-						<td>Mathematics in the Modern World</td>
-						<td>1.75</td>
-					</tr>
-					<tr>
-						<td>KOMFIL</td>
-						<td>Kontekstwalisadong Komunikasyon sa Filipino</td>
-						<td>2.00</td>
-					</tr>
-					<tr>
-						<td>CC101</td>
-						<td>Introduction to Computing</td>
-						<td>1.75</td>
-					</tr>
-					<tr>
-						<td>CC102</td>
-						<td>Computer Programming 1</td>
-						<td>2.00</td>
-					</tr>
-				</table>
-				<h4>General Average for Semester: <span>1.72</span></h4>
-				
-				<table class='ama-shs'>
-					<tr>
-						<th>Course Code</th>
-						<th>Courses</th>
-						<th>2nd Semester</th>
-					</tr>
-					<tr>
-						<td>PE2</td>
-						<td>Rhythmic Activities</td>
-						<td>1.50</td>
-					</tr>
-					<tr>
-						<td>NSTP2</td>
-						<td>National Service Training Program 2</td>
-						<td>1.50</td>
-					</tr>
-					<tr>
-						<td>GE6</td>
-						<td>Art Appreciation</td>
-						<td>2.00</td>
-					</tr>
-					<tr>
-						<td>GE5</td>
-						<td>Purposive Communication</td>
-						<td>1.75</td>
-					</tr>
-					<tr>
-						<td>GE7</td>
-						<td>Science Technology and Society</td>
-						<td>1.50</td>
-					</tr>
-					<tr>
-						<td>FILDIS</td>
-						<td>Filipino sa Iba't Ibang Disiplina</td>
-						<td>1.75</td>
-					</tr>
-					<tr>
-						<td>GE8</td>
-						<td>Professional Ethics</td>
-						<td>1.75</td>
-					</tr>
-					<tr>
-						<td>MS101</td>
-						<td>Discrete Mathematics</td>
-						<td>1.75</td>
-					</tr>
-					<tr>
-						<td>CC103</td>
-						<td>Computer Programming 2</td>
-						<td>2.50</td>
-					</tr>
-				</table>
-				<h4>General Average for Semester: <span>1.78</span></h4>
-			
-			</section>
-
-
-			<section class='sectionPerformance borderNorm'>
-				<h2>2nd Year College: BSIT</h2>
-				<table class='ama-shs'>
-					<tr>
-						<th>Course Code</th>
-						<th>Courses</th>
-						<th>1st Semester</th>
-					</tr>
-					<tr>
-						<td>ITE1</td>
-						<td>IT Elective 1</td>
-						<td>1.50</td>
-					</tr>
-					<tr>
-						<td>SOSLIT</td>
-						<td>Sosyedad at Literatura</td>
-						<td>1.50</td>
-					</tr>
-					<tr>
-						<td>PE3</td>
-						<td>Individual and Dual Sports</td>
-						<td>1.50</td>
-					</tr>
-					<tr>
-						<td>MS102</td>
-						<td>Quantitative Methods with Modeling and Simulation</td>
-						<td>2.00</td>
-					</tr>
-					<tr>
-						<td>CC104</td>
-						<td>Data Structures and Algorithms</td>
-						<td>1.75</td>
-					</tr>
-					<tr>
-						<td>HCI101</td>
-						<td>Introduction to Human Computer Interaction</td>
-						<td>1.50</td>
-					</tr>
-					<tr>
-						<td>IPT101</td>
-						<td>Integrative Programming and Technologies</td>
-						<td>1.00</td>
-					</tr>
-					<tr>
-						<td>NET101</td>
-						<td>Networking 1</td>
-						<td>1.75</td>
-					</tr>
-				</table>
-				<h4>General Average for Semester: <span>1.56</span></h4>
-				
-				<table class='ama-shs'>
-					<tr>
-						<th>Course Code</th>
-						<th>Courses</th>
-						<th>2nd Semester</th>
-					</tr>
-					<tr>
-						<td>GE9</td>
-						<td>The Life and Works of Jose Rizal</td>
-						<td>1.50</td>
-					</tr>
-					<tr>
-						<td>DM102</td>
-						<td>Financial Management</td>
-						<td>1.50</td>
-					</tr>
-					<tr>
-						<td>SIA101</td>
-						<td>System Integration and Architecture 1</td>
-						<td>2.50</td>
-					</tr>
-					<tr>
-						<td>CC105</td>
-						<td>Information Management</td>
-						<td>2.00</td>
-					</tr>
-					<tr>
-						<td>NET102</td>
-						<td>Networking 2</td>
-						<td>2.00</td>
-					</tr>
-					<tr>
-						<td>WEB101</td>
-						<td>Web Development</td>
-						<td>1.75</td>
-					</tr>
-					<tr>
-						<td>ITE2</td>
-						<td>IT Elective 2&#40;Advance Java or OOP&#41;</td>
-						<td>1.00</td>
-					</tr>
-					<tr>
-						<td>PE4</td>
-						<td>Team Sports</td>
-						<td>1.50</td>
-					</tr>
-				</table>
-				<h4>General Average for Semester: <span>1.72</span></h4>
-			
-			</section>
-
-		</details>
+        <!-- C++ -->
+        <div class="col-md-6">
+            <div class="skill-item d-flex align-items-center">
+                <div class="skill-icon me-3">
+                    <img src="assets/img/logo-cpp.png" alt="C++" class="img-fluid" style="width: 40px; height: 40px;">
+                </div>
+                <div class="skill-progress flex-grow-1">
+                    <h6 class="mb-1">C++</h6>
+                    <div class="progress" style="height: 10px;">
+                        <div class="progress-bar bg-danger" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <small class="text-muted">50%</small>
+                </div>
+            </div>
+        </div>
 		
-		<div class='fog' id='personalModalFog' onclick="collapseModal('personalModal','personalModalFog');"></div>
-		<form>
-			<div class="modalform" id="personalModal">
-				<h2> Personal Details </h2>
-				<div class="formpage">
-					<img src='images/mypics/me17.jpg' alt='me17.jpg'>
-
-					<div class="innerdiv">
-						<div class="titleandinput">
-							<label><b>First Name: </b></label>
-							<input type="text" value='Chester Barry' readonly autocomplete='off'></input>
-						</div>
-
-						<div class="titleandinput">
-							<label><b>Last Name: </b></label>
-							<input type="text" value='Dapatnapo' readonly autocomplete='off'></input>
-						</div>
-
-						<div class="titleandinput">
-							<label><b>Middle Name: </b></label>
-							<input type="text" value='Aslarona' readonly autocomplete='off'></input>
-						</div>
-
-						<div class="titleandinput">
-							<label><b>Gender: </b></label>
-							<input type='radio' disabled checked name='gender'>Male  
-							<input type='radio' disabled name='gender'>Female  
-							<input type='radio' disabled name='gender'>Other  
-						</div>
-
-						<div class="titleandinput">
-							<label><b>Date of Birth: </b></label>
-							<input type="text" value='07/21/2003' readonly autocomplete='off'></input>
-						</div>
+		<!-- Java -->
+		<div class="col-md-6">
+			<div class="skill-item d-flex align-items-center">
+				<div class="skill-icon me-3">
+					<img src="assets/img/logo-java.png" alt="Java" class="img-fluid" style="width: 40px; height: 40px;">
+				</div>
+				<div class="skill-progress flex-grow-1">
+					<h6 class="mb-1">Java</h6>
+					<div class="progress" style="height: 10px;">
+						<div class="progress-bar bg-success" role="progressbar" style="width: 20%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
 					</div>
-
-					<div class="innerdiv">
-						<div class="titleandinput">
-							<label><b>Email: </b></label>
-							<input type='email' value='dapatnapochesterbarry@gmail.com' readonly autocomplete='off'></input>
-						</div>
-
-						<div class="titleandinput">
-							<label><b>Contact No.: </b></label>
-							<input type="number" value='09685418437' readonly autocomplete='off'></input>
-						</div>
-
-						<div class="titleandinput notes">
-							<label><b>Address: </b></label>
-							<textarea col='25' row='5' readonly autocomplete='off'>Novaliches Brgy. Bagbag Quezon City</textarea>
-						</div>
-
-						<label><b>Checkout my Personal-Homepage!</b></label>
-						<a href='https://chesbarr.github.io/Personal-Homepage/index.html'>https://chesbarr.github.io/Personal-Homepage/index.html</a>
-					</div>
-					
+					<small class="text-muted">20%</small>
 				</div>
 			</div>
-		</form>
+		</div>
+		
+		<!-- C# -->
+		<div class="col-md-6">
+			<div class="skill-item d-flex align-items-center">
+				<div class="skill-icon me-3">
+					<img src="assets/img/logo-csharp.png" alt="C#" class="img-fluid" style="width: 40px; height: 40px;">
+				</div>
+				<div class="skill-progress flex-grow-1">
+					<h6 class="mb-1">C#</h6>
+					<div class="progress" style="height: 10px;">
+						<div class="progress-bar bg-success" role="progressbar" style="width: 10%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+					</div>
+					<small class="text-muted">10%</small>
+				</div>
+			</div>
+		</div>
+    </div>
+</section>
 
-		<footer class='borderNorm'>
-			<section class="footerSection">
-				<ul id='socials'>
-					<li>Email:<a href="mailto:dapatnapochesterbarry@gmail.com">dapatnapochesterbarry@gmail.com</a></li>
-					<li>Phone: <a href="tel:09685418437">09685418437</a></li>
-				</ul>
-				<ul>
-					<li>
-						<a
-							href="https://www.facebook.com/chesteraslarona.dapatnapo?mibextid=kFxxJD"
-							><i class="fa-brands fa-facebook"></i
-						></a>
-					</li>
-					<li>
-						<a href="https://www.instagram.com/chesterdapatnapo/"
-							><i class="fa-brands fa-instagram"></i
-						></a>
-					</li>
-					<li>
-						<a
-							href="https://youtube.com/@chesterbarrydapatnapo?si=5Z5NHR7WwL7lZp1I"
-							><i class="fa-brands fa-youtube"></i
-						></a>
-					</li>
-					<li>
-						<a href="https://discord.com/users/atesh2103"
-							><i class="fa-brands fa-discord"></i
-						></a>
-					</li>
-					<li>
-						<a href="https://github.com/ChesBarr"
-							><i class="fa-brands fa-github"></i
-						></a>
-					</li>
-					<li>
-						<a
-							href="https://www.tiktok.com/@atezeee?is_from_webapp=1&sender_device=pc"
-							><i class="fa-brands fa-tiktok"></i
-						></a>
-					</li>
-				</ul>
-			</section>
 
-			<section class="footerSection" id="copyright">
-				<h4>All Rights Reserved &copy;</h4>
-				<br />
-				<p id="quote">
-					"It's not about getting 6 in dice with first roll, <br />it's about
-					rolling the dice until you get 6" <br />- joma
+	<h1 class='sectionTitle' id='projects'>Projects</h1>
+	<section class='mainSection'>
+		<section class='sectionContents borderNorm' >
+			<img src='assets/img/korteSupremaProject.png' alt='korteSupremaProject.png' />
+			
+			<div class='title_description'>
+				<h3>Legal Case Management System</h3>
+				<p>
+					Simple fully functional Legal Case Management System with User, Admin,
+					Staff, Hierarchy System, Simple Messaging System, Client/Case CRUD
+					and Assigning, and a Search Query.
 				</p>
-			</section>
+			</div>
+		</section>
 
-			<section class="footerSection">
-				<button type="submit" name="linked" value="home">
-					<img
-						src="images/mypics/myIdPicture.png"
-						alt="myIdPicture.png"
-						title="Bumalik sa Menu"
-					/>
-				</button>
-			</section>
-		</footer>
-		<script src="main.js"></script>
-	</body>
+		<section class='sectionContents borderNorm reverseH'>
+			<img src='assets/img/brgysystem.png' alt='brgysystem.png' />
+			
+			<div class='title_description'>
+				
+				<h3>CRUD w/ auto Database</h3>
+				<p>
+					A Simple CRUD Barangay theme, focused on 
+					frontend side it has an automatic database creation, 
+					modified for convenience. I have done Multiple
+					projects like this
+				</p>
+			</div>
+		</section>
+
+		<section class='sectionContents borderNorm'> 
+			<img src='assets/img/airamsite.png' alt='' />
+			
+			<div class='title_description'>
+				<h3>AIRAM &#40;Make up site&#41;</h3>
+				<p>
+					Simple Make up site &#40;FRONTEND ONLY&#41;, focused 
+					on javascript having a CRUD, searching and sorting
+					product system&#40;client-side only&#41;
+					<br /><br /><a href='https://chesbarr.github.io/AIRAM_Uploaded/'>https://chesbarr.github.io/AIRAM_Uploaded/</a>
+				</p>
+			</div>
+		</section>
+
+		<section class='sectionContents borderNorm reverseH'>
+			<img src='assets/img/personal-homepage.png' alt='brgysystem.png' />
+			
+			<div class='title_description'>
+				
+				<h3>My Personal Homepage</h3>
+				<p>
+					My Personal Homepage, A Responsive Website I 
+					made when I was a beginner! have fun interacting 
+					with the elements with animations!
+					<br /><br /><a href='https://chesbarr.github.io/Personal-Homepage/index.html'>https://chesbarr.github.io/Personal-Homepage/index.html</a>
+				</p>
+			</div>
+		</section>
+
+		<section class='sectionContents borderNorm' >
+			<img src='assets/img/cppquizproject.png' alt='korteSupremaProject.png' />
+			
+			<div class='title_description'>
+				<h3>C++ Quiz System</h3>
+				<p>
+					My very first biggest project made as I was a beginner
+					<br /><br />A Fully Functional C++ Project with a Log-in System
+					that handles multiple students and tracks their scores 
+					of their subjects and their attempts. Users can also 
+					re-attempt and clear choices in a certain question of a 
+					subject. Users will get their accurate zodiac and age 
+					by just providing their birthdate, Scoreboard which will 
+					display the student's scores and averages.
+				</p>
+			</div>
+		</section>
+	</section>
+
+
+	<h1 class='sectionTitle' id='achievements'>Achievements</h1>
+	<section class='mainSection'>
+		<section class='sectionContents borderNorm' >
+			<img src='assets/img/progchampionbcp.jpg' alt='progchampionbcp.jpg' />
+			
+			<div class='title_description'>
+				<h3>Programming Champion</h3>
+				<p>
+					I won a programming competition in my 2nd year in an IT 
+					Festival held at Bestlink college of the Philippines
+				</p>
+			</div>
+		</section>
+
+		<section class='sectionContents borderNorm reverseH'>
+			<img src='assets/img/ama-second-place-quiz-bee.jpg' alt='ama-second-place-quiz-bee.jpg' />
+			
+			<div class='title_description'>
+				<h3>2nd Place Quiz Bee</h3>
+				<p>
+					We placed 2nd in a quiz bee held at AMA University when I was 
+					in Grade 11 Senior HIgh School
+				</p>
+			</div>
+		</section>
+
+		<section class='sectionContents borderNorm'>
+			<img src='assets/img/bcp-mayor-certificate.jpg' alt='bcp-mayor-certificate.jpg' />
+			
+			<div class='title_description'>
+				<h3>Class Mayor</h3>
+				<p>
+					I acted as a class mayor multiple times during my 
+					college years, aspiring to be a great leader
+				</p>
+			</div>
+		</section>
+
+		<section class='sectionContents borderNorm reverseH'>
+			<img src='assets/img/comm-service-nstp.jpg' alt='comm-service-nstp.jpg' />
+			
+			<div class='title_description'>
+				<h3>Community Service</h3>
+				<p>
+					I participated in organizing a Feeding Program for our 
+					NSTP Community Service during my Freshmen Year. 
+				</p>
+			</div>
+		</section>
+
+	</section>
+
+
+	<details class='mainSection'>
+		<summary class='sectionTitle' id='academics'>Academics</summary>
+
+		<section class='sectionPerformance borderNorm'>
+			<!-- <a href="assets/img/Grade11Slip1stSem.pdf" download>Grade11Slip1stSem.pdf</a> -->
+			<!-- <embed src="assets/img/Grade11Slip1stSem.pdf" type="application/pdf"> -->
+			<!-- <select id="yearSel" onchange="change_tbl(this)">
+				<option value="g11_semA">Grade 11 1st Sem</option>
+				<option value="g11_semB" selected>Grade 11 2nd Sem</option>
+				<option value="g12_semA">Grade 12 1st Sem</option>
+				<option value="g12_semB">Grade 12 2nd Sem</option>
+				<option value="frst_semA">First Year 1st Sem</option>
+				<option value="frst_semB">First Year 2nd Sem</option>
+				<option value="second_semA">Second Year 1st Sem</option>
+				<option value="second_semB">Second Year 2nd Sem</option>
+			</select> -->
+
+			<h2>1st Year SHS 1st Sem: ICT - Animation</h2>
+			<table class='ama-shs'>
+				<tr>
+					<th>Subjects</th>
+					<th colspan='2' style='padding: 0;'>Quarter
+						<table style='width: 100%; border-collapse: collapse;'>
+							<tr>
+								<td>1st</td>
+								<td>2nd</td>
+							</tr>
+						</table>
+					</th>
+					<th>Semester Final Grade</th>
+				</tr>
+				<tr>
+					<td>Earth Science</td>
+					<td>84</td>
+					<td>88</td>
+					<td>86</td>
+				</tr>
+				<tr>
+					<td>Empowerment Technologies &#40;E-Tech&#41;: ICT for Professional Tracks</td>
+					<td>87</td>
+					<td>74</td>
+					<td>81</td>
+				</tr>
+				<tr>
+					<td>English for Academic and Professional Purposes</td>
+					<td>85</td>
+					<td>80</td>
+					<td>83</td>
+				</tr>
+				<tr>
+					<td>General Mathematics</td>
+					<td>80</td>
+					<td>78</td>
+					<td>79</td>
+				</tr>
+				<tr>
+					<td>Homeroom G11A</td>
+					<td>Excellent</td>
+					<td>Excellent</td>
+					<td>Good</td>
+				</tr>
+				<tr>
+					<td>Introduction to Philosophy of the Human Person/Pambungad sa Pilosopiya ng Tao</td>
+					<td>73</td>
+					<td>77</td>
+					<td>75</td>
+				</tr>
+				<tr>
+					<td>Oral Communication in Context</td>
+					<td>82</td>
+					<td>78</td>
+					<td>80</td>
+				</tr>
+				<tr>
+					<td>Physical Education &amp; Health G11A</td>
+					<td>77</td>
+					<td>93</td>
+					<td>85</td>
+				</tr>
+				<tr>
+					<td>Understanding Culture, Society and Politics</td>
+					<td>85</td>
+					<td>88</td>
+					<td>87</td>
+				</tr>
+			</table>
+			<h4>General Average for Sem: <span>82</span></h4>
+		
+			<h2>1st Year SHS 2nd Sem: ICT - Animation</h2>
+			<table class='ama-shs'>
+				<tr>
+					<th>Subjects</th>
+					<th colspan='2' style='padding: 0;'>Quarter
+						<table style='width: 100%; border-collapse: collapse;'>
+							<tr>
+							<td>3rd</td>
+							<td>4th</td>
+							</tr>
+						</table>
+					</th>
+					<th>Semester Final Grade</th>
+				</tr>
+				<tr>
+					<td>21st Century Literature from the Philippines and the World</td>
+					<td>84</td>
+					<td>94</td>
+					<td>89</td>
+				</tr>
+				<tr>
+					<td>Animation &#40; NC II&#41; Part 1</td>
+					<td>92</td>
+					<td>92</td>
+					<td>92</td>
+				</tr>
+				<tr>
+					<td>Homeroom G11B</td>
+					<td>Excellent</td>
+					<td>Excellent</td>
+					<td>Good</td>
+				</tr>
+				<tr>
+					<td>Physical Education &amp; Health G11B</td>
+					<td>90</td>
+					<td>93</td>
+					<td>92</td>
+				</tr>
+				<tr>
+					<td>Physical Science</td>
+					<td>83</td>
+					<td>91</td>
+					<td>87</td>
+				</tr>
+				<tr>
+					<td>Practical Research 1</td>
+					<td>82</td>
+					<td>93</td>
+					<td>88</td>
+				</tr>
+				<tr>
+					<td>Reading and Writing Skills</td>
+					<td>85</td>
+					<td>93</td>
+					<td>89</td>
+				</tr>
+				<tr>
+					<td>Statistics and Probability</td>
+					<td>81</td>
+					<td>90</td>
+					<td>86</td>
+				</tr>
+			</table>
+			<h4>General Average for Sem: <span>89</span></h4>
+		</section>
+
+
+		<section class='sectionPerformance borderNorm'>
+			<h2>2nd Year SHS 1st Sem: ICT - Animation</h2>
+			<table class='ama-shs'>
+				<tr>
+					<th>Subjects</th>
+					<th colspan='2' style='padding: 0;'>Quarter
+						<table style='width: 100%; border-collapse: collapse;'>
+							<tr>
+							<td>1st</td>
+							<td>2nd</td>
+							</tr>
+						</table>
+					</th>
+					<th>Semester Final Grade</th>
+				</tr>
+				<tr>
+					<td>Animation &#40;NC II&#41; Part 2</td>
+					<td>84</td>
+					<td>85</td>
+					<td>85</td>
+				</tr>
+				<tr>
+					<td>Homeroom G12A</td>
+					<td>Satisfactory</td>
+					<td>Satisfactory</td>
+					<td>Satisfactory</td>
+				</tr>
+				<tr>
+					<td>Komunikasyon at Pananaliksik sa Wika ng Kulturang Pilipino</td>
+					<td>92</td>
+					<td>93</td>
+					<td>93</td>
+				</tr>
+				<tr>
+					<td>Media and Information Literacy</td>
+					<td>80</td>
+					<td>90</td>
+					<td>95</td>
+				</tr>
+				<tr>
+					<td>Pagsulat sa Filipino sa Piling Larangan &#40;Tech-Voc&#41;</td>
+					<td>92</td>
+					<td>89</td>
+					<td>91</td>
+				</tr>
+				<tr>
+					<td>Personal Development/Pansariling Kaunlaran</td>
+					<td>76</td>
+					<td>94</td>
+					<td>85</td>
+				</tr>
+				<tr>
+					<td>Physical Education &amp; Health G12A</td>
+					<td>85</td>
+					<td>92</td>
+					<td>89</td>
+				</tr>
+				<tr>
+					<td>Practical Research 2</td>
+					<td>90</td>
+					<td>89</td>
+					<td>90</td>
+				</tr>
+				<tr>
+					<td>Visual Graphic Design &#40;NC II&#41; Part 1</td>
+					<td>90</td>
+					<td>88</td>
+					<td>89</td>
+				</tr>
+			</table>
+			<h4>General Average for Sem: <span>88.38</span></h4>
+		
+			<h2>2nd Year SHS 2nd Sem: ICT - Animation</h2>
+			<table class='ama-shs'>
+				<tr>
+					<th>Subjects</th>
+					<th colspan='2' style='padding: 0;'>Quarter
+						<table style='width: 100%; border-collapse: collapse;'>
+							<tr>
+							<td>3rd</td>
+							<td>4th</td>
+							</tr>
+						</table>
+					</th>
+					<th>Semester Final Grade</th>
+				</tr>
+				<tr>
+					<td>Contemporary Philippine Arts from the Regions</td>
+					<td>88</td>
+					<td>85</td>
+					<td>87</td>
+				</tr>
+				<tr>
+					<td>Entrepreneurship</td>
+					<td>87</td>
+					<td>84</td>
+					<td>86</td>
+				</tr>
+				<tr>
+					<td>Homeroom G12B</td>
+					<td>Excellent</td>
+					<td>Excellent</td>
+					<td>Excellent</td>
+				</tr>
+				<tr>
+					<td>Inquiries, Investigations and Immersion</td>
+					<td>82</td>
+					<td>88</td>
+					<td>85</td>
+				</tr>
+				<tr>
+					<td>Pagbasa at Pagsusuri ng Iba't Ibang Teksto Tungo s</td>
+					<td>86</td>
+					<td>84</td>
+					<td>85</td>
+				</tr>
+				<tr>
+					<td>Physical Education &amp; Health G12B</td>
+					<td>90</td>
+					<td>89</td>
+					<td>90</td>
+				</tr>
+				<tr>
+					<td>Visual Graphic Design &#40;NC II&#41; Part 2</td>
+					<td>91</td>
+					<td>82</td>
+					<td>87</td>
+				</tr>
+				<tr>
+					<td>Work Immersion</td>
+					<td>88</td>
+					<td>89</td>
+					<td>89</td>
+				</tr>
+			</table>
+			<h4>General Average for Semester: <span>87</span></h4>
+		</section>
+
+
+		<section class='sectionPerformance borderNorm'>
+			<h2>1st Year College: BSIT</h2>
+			<table class='ama-shs'>
+				<tr>
+					<th>Course Code</th>
+					<th>Courses</th>
+					<th>1st Semester</th>
+				</tr>
+				<tr>
+					<td>PE1</td>
+					<td>Physical Fitness and Gymnastics</td>
+					<td>1.50</td>
+				</tr>
+				<tr>
+					<td>NSTP1</td>
+					<td>National Service Training Program 1</td>
+					<td>1.25</td>
+				</tr>
+				<tr>
+					<td>GE1</td>
+					<td>Understanding the Self</td>
+					<td>2.00</td>
+				</tr>
+				<tr>
+					<td>GE2</td>
+					<td>Reading in Philippine History</td>
+					<td>1.50</td>
+				</tr>
+				<tr>
+					<td>GE3</td>
+					<td>The Contemporary World</td>
+					<td>1.75</td>
+				</tr>
+				<tr>
+					<td>GE4</td>
+					<td>Mathematics in the Modern World</td>
+					<td>1.75</td>
+				</tr>
+				<tr>
+					<td>KOMFIL</td>
+					<td>Kontekstwalisadong Komunikasyon sa Filipino</td>
+					<td>2.00</td>
+				</tr>
+				<tr>
+					<td>CC101</td>
+					<td>Introduction to Computing</td>
+					<td>1.75</td>
+				</tr>
+				<tr>
+					<td>CC102</td>
+					<td>Computer Programming 1</td>
+					<td>2.00</td>
+				</tr>
+			</table>
+			<h4>General Average for Semester: <span>1.72</span></h4>
+			
+			<table class='ama-shs'>
+				<tr>
+					<th>Course Code</th>
+					<th>Courses</th>
+					<th>2nd Semester</th>
+				</tr>
+				<tr>
+					<td>PE2</td>
+					<td>Rhythmic Activities</td>
+					<td>1.50</td>
+				</tr>
+				<tr>
+					<td>NSTP2</td>
+					<td>National Service Training Program 2</td>
+					<td>1.50</td>
+				</tr>
+				<tr>
+					<td>GE6</td>
+					<td>Art Appreciation</td>
+					<td>2.00</td>
+				</tr>
+				<tr>
+					<td>GE5</td>
+					<td>Purposive Communication</td>
+					<td>1.75</td>
+				</tr>
+				<tr>
+					<td>GE7</td>
+					<td>Science Technology and Society</td>
+					<td>1.50</td>
+				</tr>
+				<tr>
+					<td>FILDIS</td>
+					<td>Filipino sa Iba't Ibang Disiplina</td>
+					<td>1.75</td>
+				</tr>
+				<tr>
+					<td>GE8</td>
+					<td>Professional Ethics</td>
+					<td>1.75</td>
+				</tr>
+				<tr>
+					<td>MS101</td>
+					<td>Discrete Mathematics</td>
+					<td>1.75</td>
+				</tr>
+				<tr>
+					<td>CC103</td>
+					<td>Computer Programming 2</td>
+					<td>2.50</td>
+				</tr>
+			</table>
+			<h4>General Average for Semester: <span>1.78</span></h4>
+		
+		</section>
+
+
+		<section class='sectionPerformance borderNorm'>
+			<h2>2nd Year College: BSIT</h2>
+			<table class='ama-shs'>
+				<tr>
+					<th>Course Code</th>
+					<th>Courses</th>
+					<th>1st Semester</th>
+				</tr>
+				<tr>
+					<td>ITE1</td>
+					<td>IT Elective 1</td>
+					<td>1.50</td>
+				</tr>
+				<tr>
+					<td>SOSLIT</td>
+					<td>Sosyedad at Literatura</td>
+					<td>1.50</td>
+				</tr>
+				<tr>
+					<td>PE3</td>
+					<td>Individual and Dual Sports</td>
+					<td>1.50</td>
+				</tr>
+				<tr>
+					<td>MS102</td>
+					<td>Quantitative Methods with Modeling and Simulation</td>
+					<td>2.00</td>
+				</tr>
+				<tr>
+					<td>CC104</td>
+					<td>Data Structures and Algorithms</td>
+					<td>1.75</td>
+				</tr>
+				<tr>
+					<td>HCI101</td>
+					<td>Introduction to Human Computer Interaction</td>
+					<td>1.50</td>
+				</tr>
+				<tr>
+					<td>IPT101</td>
+					<td>Integrative Programming and Technologies</td>
+					<td>1.00</td>
+				</tr>
+				<tr>
+					<td>NET101</td>
+					<td>Networking 1</td>
+					<td>1.75</td>
+				</tr>
+			</table>
+			<h4>General Average for Semester: <span>1.56</span></h4>
+			
+			<table class='ama-shs'>
+				<tr>
+					<th>Course Code</th>
+					<th>Courses</th>
+					<th>2nd Semester</th>
+				</tr>
+				<tr>
+					<td>GE9</td>
+					<td>The Life and Works of Jose Rizal</td>
+					<td>1.50</td>
+				</tr>
+				<tr>
+					<td>DM102</td>
+					<td>Financial Management</td>
+					<td>1.50</td>
+				</tr>
+				<tr>
+					<td>SIA101</td>
+					<td>System Integration and Architecture 1</td>
+					<td>2.50</td>
+				</tr>
+				<tr>
+					<td>CC105</td>
+					<td>Information Management</td>
+					<td>2.00</td>
+				</tr>
+				<tr>
+					<td>NET102</td>
+					<td>Networking 2</td>
+					<td>2.00</td>
+				</tr>
+				<tr>
+					<td>WEB101</td>
+					<td>Web Development</td>
+					<td>1.75</td>
+				</tr>
+				<tr>
+					<td>ITE2</td>
+					<td>IT Elective 2&#40;Advance Java or OOP&#41;</td>
+					<td>1.00</td>
+				</tr>
+				<tr>
+					<td>PE4</td>
+					<td>Team Sports</td>
+					<td>1.50</td>
+				</tr>
+			</table>
+			<h4>General Average for Semester: <span>1.72</span></h4>
+		
+		</section>
+
+	</details>
+	
+	<div class='fog' id='personalModalFog' onclick="collapseModal('personalModal','personalModalFog');"></div>
+	<form>
+		<div class="modalform" id="personalModal">
+			<h2> Personal Details </h2>
+			<div class="formpage">
+				<img src='assets/img/me17.jpg' alt='me17.jpg'>
+
+				<div class="innerdiv">
+					<div class="titleandinput">
+						<label><b>First Name: </b></label>
+						<input type="text" value='Chester Barry' readonly autocomplete='off'></input>
+					</div>
+
+					<div class="titleandinput">
+						<label><b>Last Name: </b></label>
+						<input type="text" value='Dapatnapo' readonly autocomplete='off'></input>
+					</div>
+
+					<div class="titleandinput">
+						<label><b>Middle Name: </b></label>
+						<input type="text" value='Aslarona' readonly autocomplete='off'></input>
+					</div>
+
+					<div class="titleandinput">
+						<label><b>Gender: </b></label>
+						<input type='radio' disabled checked name='gender'>Male  
+						<input type='radio' disabled name='gender'>Female  
+						<input type='radio' disabled name='gender'>Other  
+					</div>
+
+					<div class="titleandinput">
+						<label><b>Date of Birth: </b></label>
+						<input type="text" value='07/21/2003' readonly autocomplete='off'></input>
+					</div>
+				</div>
+
+				<div class="innerdiv">
+					<div class="titleandinput">
+						<label><b>Email: </b></label>
+						<input type='email' value='dapatnapochesterbarry@gmail.com' readonly autocomplete='off'></input>
+					</div>
+
+					<div class="titleandinput">
+						<label><b>Contact No.: </b></label>
+						<input type="number" value='09685418437' readonly autocomplete='off'></input>
+					</div>
+
+					<div class="titleandinput notes">
+						<label><b>Address: </b></label>
+						<textarea col='25' row='5' readonly autocomplete='off'>Novaliches Brgy. Bagbag Quezon City</textarea>
+					</div>
+
+					<label><b>Checkout my Personal-Homepage!</b></label>
+					<a href='https://chesbarr.github.io/Personal-Homepage/index.html'>https://chesbarr.github.io/Personal-Homepage/index.html</a>
+				</div>
+				
+			</div>
+		</div>
+	</form>
+
+	<footer class='borderNorm'>
+		<section class="footerSection">
+			<ul id='socials'>
+				<li>Email:<a href="mailto:dapatnapochesterbarry@gmail.com">dapatnapochesterbarry@gmail.com</a></li>
+				<li>Phone: <a href="tel:09685418437">09685418437</a></li>
+			</ul>
+			<ul>
+				<li>
+					<a
+						href="https://www.facebook.com/chesteraslarona.dapatnapo?mibextid=kFxxJD"
+						><i class="fa-brands fa-facebook"></i
+					></a>
+				</li>
+				<li>
+					<a href="https://www.instagram.com/chesterdapatnapo/"
+						><i class="fa-brands fa-instagram"></i
+					></a>
+				</li>
+				<li>
+					<a
+						href="https://youtube.com/@chesterbarrydapatnapo?si=5Z5NHR7WwL7lZp1I"
+						><i class="fa-brands fa-youtube"></i
+					></a>
+				</li>
+				<li>
+					<a href="https://discord.com/users/atesh2103"
+						><i class="fa-brands fa-discord"></i
+					></a>
+				</li>
+				<li>
+					<a href="https://github.com/ChesBarr"
+						><i class="fa-brands fa-github"></i
+					></a>
+				</li>
+				<li>
+					<a
+						href="https://www.tiktok.com/@atezeee?is_from_webapp=1&sender_device=pc"
+						><i class="fa-brands fa-tiktok"></i
+					></a>
+				</li>
+			</ul>
+		</section>
+
+		<section class="footerSection" id="copyright">
+			<h4>All Rights Reserved &copy;</h4>
+			<br />
+			<p id="quote">
+				"It's not about getting 6 in dice with first roll, <br />it's about
+				rolling the dice until you get 6" <br />- joma
+			</p>
+		</section>
+
+		<section class="footerSection">
+			<button type="submit" name="linked" value="home">
+				<img
+					src="assets/img/myIdPicture.png"
+					alt="myIdPicture.png"
+					title="Bumalik sa Menu"
+				/>
+			</button>
+		</section>
+	</footer>
+	<!-- <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script> -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="assets/js/script.js"></script>
+</body>
 </html>

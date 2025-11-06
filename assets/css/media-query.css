@@ -1,0 +1,237 @@
+
+/* v Media Queries v */
+
+/* Default */
+body {
+	margin: 0;
+    padding: 0;
+
+	background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+header {
+    margin: 6% 20% 4%;
+    justify-content: center;
+}
+header p {
+    padding: 20px;
+}
+#myProfile {
+    height: 300px;
+    width: 300px;
+}
+nav ul li {
+	padding: 15px 30px;
+}
+nav ul li a {
+    font-size: 1.5rem;
+}
+
+footer {
+    margin-top: 300px;
+    flex-direction: row;
+}
+.footerSection label a, .footerSection ul li a i {
+    font-size: 2rem;
+}
+.footerSection label a {
+    font-size: 1.5rem;
+}
+.footerSection button img {
+    height: 150px;
+    width: 150px;
+}
+
+/* styles1.css */
+.specialties {
+    margin: 0 5%;
+}
+.specialties img {
+    margin: 3%;
+	height: 80px;
+    width: 80px;
+}
+.specialties img:hover {
+    height: 8rem;
+    width: 8rem;
+}
+.specialties img:active {
+    height: 5rem;
+    width: 5rem;
+}
+
+.sectionTitle {
+    margin: 300px 0 0;
+    padding: 50px 0;
+    
+    font-size: 10rem;
+}
+.mainSection {
+
+}
+.sectionContents {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.sectionContents:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+.sectionContents, .sectionPerformance {
+    padding: 50px 0;
+    margin: 100px 0;
+}
+.sectionContents img {
+	height: 450px;
+    width: 700px;
+}
+.sectionContents .title_description h3 {
+    font-size: 2rem;
+	margin: 50px 0;
+}
+.sectionContents .title_description p {
+    font-size: 1.2rem;
+    margin: 0 10%;
+}
+
+.ama-shs {
+    margin: 30px 0;
+}
+.ama-shs tr th {
+    padding: 15px;
+}
+.ama-shs tr td {
+    padding: 5px;
+}
+
+.modalform {
+    padding: 5%;
+}
+form {
+    padding: 20px 10px;
+}
+.formpage {
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+}
+.formpage img {
+    height: 300px;
+    width: 400px;
+}
+.titleandinput {
+    margin: 5% 10%;
+    width: 100%;
+}
+
+/* Extra Small Devices (Phones) */
+@media only screen and (max-width: 575px){
+    body {
+      font-size: 14px;
+    }
+    nav {
+        height: 60px;
+    }
+    nav h2 {
+        font-size: .8rem;
+    }
+    nav ul li {
+        padding: 5px 10px;
+    }
+    nav ul li a {
+        font-size: .8rem;
+    }
+    
+    header {
+        margin: 30% 10% 10%;
+    }
+    header p {
+        padding: 15px;
+        font-size: .5rem;
+    }
+    #myProfile {
+        height: 150px;
+        width: 150px;
+    }
+
+    footer {
+        margin-top: 200px;
+        flex-direction: column-reverse;
+    }
+    .footerSection label a, .footerSection ul li a i {
+        font-size: 2rem;
+    }
+    .footerSection label a {
+        font-size: 1.2rem;
+    }
+    .footerSection button img {
+        height: 100px;
+        width: 100px;
+    }
+
+    /* styles1.css */
+    .specialties img {
+        height: 50px;
+        width: 50px;
+    }
+    .specialties img:hover {
+        height: 5rem;
+        width: 5rem;
+    }
+    .specialties img:active {
+        height: 3rem;
+        width: 3rem;
+    }
+
+    .sectionTitle {
+        font-size: 3rem;
+    }
+    .mainSection {
+    
+    }
+    .sectionContents, .sectionPerformance {
+        padding: 30px 0;
+        margin: 60px 0;
+    }
+    .sectionContents img {
+        height: 120px;
+        width: 170px;
+    }
+    .sectionContents .title_description h3 {
+        font-size: .8rem;
+        margin: 10px 0;
+    }
+    .sectionContents .title_description p {
+        font-size: .7rem;
+    }
+    .sectionContents .title_description p a {
+        font-size: .5rem;
+    }
+    
+    .modalform {
+        padding: 2%;
+    }
+    form {
+        padding: 20px 5px;
+    }
+    .formpage {
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+    }
+    .formpage img {
+        height: 150px;
+        width: 130px;
+    }
+    .titleandinput  {
+        width: 100%;
+        margin: 2% 5%;
+    }
+}
+  
+  /* Small Devices (Tablets) */
+@media only screen and (min-width: 576px) and (max-width: 767px){
+    body {
+      font-size: 15px;
+    }
+}

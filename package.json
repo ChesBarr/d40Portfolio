@@ -1,0 +1,13 @@
+{
+  "name": "my-portfolio",
+  "version": "1.0.0",
+  "scripts": {
+    "copy-bootstrap": "cp node_modules/bootstrap/dist/css/bootstrap.min.css assets/css/ && cp node_modules/bootstrap/dist/js/bootstrap.bundle.min.js assets/js/"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.2"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}
